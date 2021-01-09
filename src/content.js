@@ -3,6 +3,17 @@ import github from '@iconify/icons-foundation/social-github';
 import twitter from '@iconify/icons-foundation/social-twitter';
 import email from '@iconify/icons-mdi/email';
 import { Icon } from '@iconify/react';
+import weAdmin1 from './img/we-admin1.jpg';
+import weAdmin2 from './img/we-admin2.jpg';
+import weAdmin3 from './img/we-admin3.jpg';
+import weAdmin4 from './img/we-admin4.jpg';
+import weAdmin5 from './img/we-admin5.jpg';
+import weAnalysis from './img/we-analysis.jpg';
+import weP2G from './img/we-p2g.jpg';
+import weProspect from './img/we-prospect.jpg';
+import tempora1 from './img/tempora1.jpg';
+import tempora2 from './img/tempora2.jpg';
+
 
 
 export const ABOUT = {
@@ -25,7 +36,7 @@ export const WORK = [
         title: "WealthEngine Administration Suite",
         description: <p>Worked on an agile tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.</p>, 
         images: [
-
+            weAdmin1, weAdmin2, weAdmin3, weAdmin4, weAdmin5
         ],
         technologies: [
             "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS", "React Router", "HighCharts"
@@ -35,7 +46,7 @@ export const WORK = [
         title: "Wealth Analysis Summary Tab",
         description: "Worked with the team to design and build out a tab for aggregate visual analysis of any number of system wealth profiles. The tab features multiple data visualization widgets built using ReactJS.",
         images: [
-
+            weAnalysis
         ],
         technologies: [
             "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS"
@@ -45,7 +56,7 @@ export const WORK = [
         title: "Propensity to Give (P2G) by Category",
         description: "Designed and built out breakdown visual analysis widget of WealthEngine’s proprietary P2G score by Category.",
         images: [
-
+            weP2G
         ],
         technologies: [
             "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS"
@@ -55,7 +66,7 @@ export const WORK = [
         title: "WE Prospect",
         description: "Worked with product management to design and build visual UI for the WE Prospect Audience Builder. The tool allows users to query and segment WealthEngine’s Data Graph into custom audiences.",
         images: [
-
+            weProspect
         ],
         technologies: [
             "HTML", "CSS", "Sass/scss",  "JavaScript", "AngularJS"
@@ -65,7 +76,7 @@ export const WORK = [
         description: "Worked with a friend to implement his vision for an app to aid spiritual seekers in centering prayer using Scripture and other spiritual verses. The app features simple background color animations and custom audio for each meditation. Each meditation presents a consistent audio format: a bell rings, the verse is read, then the bell is rung again. The user is then invited to meditate on the passage for a certain amount of time. At the end the bells and passage audio is again played.",
         link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
         images: [
-
+            tempora1, tempora2
         ],
         technologies: [
             "HTML", "CSS", "JavaScript", "ReactJS", "React Router"

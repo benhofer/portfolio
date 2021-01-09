@@ -71,17 +71,20 @@ function App() {
           {
             WORK.map((p,i) => 
               <div className="sub-section" key={'work-' + i}>
-                <h2 className="is-size-4">
-                  {p.title} &nbsp;
-                  {p.link && 
-                  <small style={{fontSize: '13px'}}><a href={p.link} rel="noreferrer" target="_blank">View App ></a></small>
-                  }
-                </h2>
-                <p>{p.description}</p>
-                
-                {p.images.map(i => 
-                  <img src={i.src} alt={i.alt} width={i.size} /> 
-                )}
+                <div className="mb-4">
+                  <h2 className="is-size-4">
+                    {p.title} &nbsp;
+                    {p.link && 
+                    <small style={{fontSize: '13px'}}><a href={p.link} rel="noreferrer" target="_blank">View App ></a></small>
+                    }
+                  </h2>
+                  <p>{p.description}</p>
+                </div>
+                  {p.images.map(i => 
+                    <div className="product-img-wrapper">
+                      <img className="product-img" src={i} alt='' width="100%" /> 
+                    </div>
+                  )}                
                 <ul className="technologies">
                   {p.technologies.map((t,i) => 
                     <li key={'tech-'+i}><b>{t}</b></li>

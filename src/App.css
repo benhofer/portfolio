@@ -58,6 +58,15 @@ h1.title svg {
   box-shadow: 0 0 8px silver;
 }
 
+.product-img-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.product-img {
+  border: 1px solid silver;
+  margin: 1rem 1rem 1rem 0;
+}
+
 .technologies {
   display: flex; 
   padding: 1rem 0;
