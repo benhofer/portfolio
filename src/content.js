@@ -20,6 +20,9 @@ export const WORK = [
         description: <p>Worked on an agile tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.</p>, 
         images: [
 
+        ],
+        technologies: [
+            "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS", "React Router", "HighCharts"
         ]
     },
     {
@@ -27,6 +30,9 @@ export const WORK = [
         description: <p>Worked on an agile tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.</p>, 
         images: [
 
+        ],
+        technologies: [
+            "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS", "React Router", "HighCharts"
         ]
     },
     {
@@ -34,6 +40,9 @@ export const WORK = [
         description: <p>Worked on an agile tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.</p>, 
         images: [
 
+        ],
+        technologies: [
+            "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS", "React Router", "HighCharts"
         ]
     },
     {
@@ -41,6 +50,9 @@ export const WORK = [
         description: <p>Worked on an agile tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.</p>, 
         images: [
 
+        ],
+        technologies: [
+            "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS", "React Router", "HighCharts"
         ]
     },
 

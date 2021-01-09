@@ -12,19 +12,6 @@
   padding-right: 1.5rem;
 }
 
-.footer {
-  background: WhiteSmoke;
-}
-
-.footer .links {
-  display: flex; 
-  justify-content: center; 
-}
-
-.footer .links a {
-  padding: .75rem;
-}
-
 .hero {
   background: WhiteSmoke!important;
 }
@@ -36,10 +23,39 @@
   box-shadow: 0 0 8px silver;
 }
 
+.technologies {
+  display: flex; 
+  padding: 1rem 0;
+  justify-content: left;
+}
+
+.technologies li { 
+  font-weight: bold;
+  padding: .25rem .5rem;
+  margin-right: .25rem;
+  background: olive;  
+  color: white;
+  border-radius: 4px;
+}
+
 #testimonials .section {
   background: WhiteSmoke;
 }
 
 #testimonials p {
   margin-bottom: 2rem;
+}
+
+
+.footer {
+  background: WhiteSmoke;
+}
+
+.footer .links {
+  display: flex; 
+  justify-content: center; 
+}
+
+.footer .links a {
+  padding: .75rem;
 }

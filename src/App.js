@@ -44,7 +44,7 @@ function App() {
                     { ABOUT.title }
                     { ABOUT.text }
                     <section className="links py-4">
-                      { ABOUT.links.map(link => link)}
+                      { ABOUT.links.map((link,i) => <span key={'link-'+i}>{link}</span>)}
                     </section>
                 </div>
               </div>
@@ -56,13 +56,18 @@ function App() {
         <section className="section" id="work">
           <h1 className="title">Work</h1>
           {
-            WORK.map(p => 
-              <div className="section">
+            WORK.map((p,i) => 
+              <div className="section" key={'work-' + i}>
                 <div className="is-size-4">{p.title}</div>
                 <p>{p.description}</p>
                 {p.images.map(i => 
                   <img src={i.src} alt={i.alt} width={i.size} /> 
                 )}
+                <ul className="technologies">
+                  {p.technologies.map((t,i) => 
+                    <li key={'tech-'+i}><b>{t}</b></li>
+                  )}
+                </ul>
               </div>
             )
           }
@@ -72,8 +77,8 @@ function App() {
           <h1 className="title">Testimonials</h1>
           <p>You don't have to take my word for it. Here is what some of my colleagues have written about working with me. Find more on my <a href="https://www.linkedin.com/in/benhofer/" rel="noreferrer" target="_blank">LinkedIn profile</a>.</p>
           {
-            TESTIMONIALS.map(t => 
-              <div className="section">
+            TESTIMONIALS.map((t,i) => 
+              <div key={'testimonial-' + i} className="section">
                 <h2 className="is-size-5">
                   {t.text}
                 </h2>
@@ -87,10 +92,7 @@ function App() {
       </div>
       <footer className="footer">
         <section className="links container p-6">
-            <a href="http://twitter.com/benhofer" rel="noreferrer" target="_blank">Twitter</a>
-            <a href="https://www.linkedin.com/in/benhofer/" rel="noreferrer" target="_blank">LinkedIn</a>
-            <a href="http://github.com/benhofer" rel="noreferrer" target="_blank">Github</a>
-            <a href="mailto:ben dot hofer at gmail dot com" rel="noreferrer" target="_blank">Email</a>
+          { ABOUT.links.map((link,i) => <span key={'link-'+i}>{link}</span>)}
         </section>
         <div className="content has-text-centered">
           <p>
