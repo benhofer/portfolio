@@ -16,7 +16,7 @@ export const ABOUT = {
 
 export const WORK = [
     {
-        title: <h2 className="is-size-4">WealthEngine Administration Suite</h2>,
+        title: "WealthEngine Administration Suite",
         description: <p>Worked on an agile tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.</p>, 
         images: [
 
@@ -26,35 +26,55 @@ export const WORK = [
         ]
     },
     {
-        title: <h2 className="is-size-4">WealthEngine Administration Suite</h2>,
-        description: <p>Worked on an agile tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.</p>, 
+        title: "Wealth Analysis Summary Tab",
+        description: "Worked with the team to design and build out a tab for aggregate visual analysis of any number of system wealth profiles. The tab features multiple data visualization widgets built using ReactJS.",
         images: [
 
         ],
         technologies: [
-            "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS", "React Router", "HighCharts"
+            "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS"
         ]
     },
     {
-        title: <h2 className="is-size-4">WealthEngine Administration Suite</h2>,
-        description: <p>Worked on an agile tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.</p>, 
+        title: "Propensity to Give (P2G) by Category",
+        description: "Designed and built out breakdown visual analysis widget of WealthEngine’s proprietary P2G score by Category.",
         images: [
 
         ],
         technologies: [
-            "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS", "React Router", "HighCharts"
+            "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS"
         ]
     },
     {
-        title: <h2 className="is-size-4">WealthEngine Administration Suite</h2>,
-        description: <p>Worked on an agile tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.</p>, 
+        title: "WE Prospect",
+        description: "Worked with product management to design and build visual UI for the WE Prospect Audience Builder. The tool allows users to query and segment WealthEngine’s Data Graph into custom audiences.",
         images: [
 
         ],
         technologies: [
-            "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS", "React Router", "HighCharts"
+            "HTML", "CSS", "Sass/scss",  "JavaScript", "AngularJS"
         ]
-    },
+    },{
+        title: "Tempora App",
+        description: "Worked with a friend to implement his vision for an app to aid spiritual seekers in centering prayer using Scripture and other spiritual verses. The app features simple background color animations and custom audio for each meditation. Each meditation presents a consistent audio format: a bell rings, the verse is read, then the bell is rung again. The user is then invited to meditate on the passage for a certain amount of time. At the end the bells and passage audio is again played.",
+        link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
+        images: [
+
+        ],
+        technologies: [
+            "HTML", "CSS", "JavaScript", "ReactJS", "React Router"
+        ]
+    },{
+        title: "Would You Rather App ",
+        description: "This project was for the Udacity ReactJS Nanodegree. The assignment was to build an app which would allow users to create “Would You Rather” questions and also to vote on them. The demo features three made-up users.",
+        link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
+        images: [
+
+        ],
+        technologies: [
+            "HTML", "CSS", "JavaScript", "ReactJS"
+        ]
+    }
 
 ]
 
@@ -69,5 +89,15 @@ export const TESTIMONIALS = [
         colleague: "Samir Damle",
         organization: "WealthEngine",
         title: "Senior Director of User Experience Design"
+    },{
+        text: <div><p>Ben has this amazingly calm demeanor and earnestly strives to deliver web-based user interfaces as specificated by the product team in conjunction with what is needed by the end-users. He methodically puts in the time to understand what is required, he focuses his effort on what is the most logical and workable in the end, and he continues to hone his skills to be on the forefront of front end web design. I was fortunate to be able to work with him to clarify workflow, reports, and results on several projects over the years, and he was always respectful of everyone that he interacted with at WealthEngine.</p></div>,
+        colleague: "Zara Schiavo-Campo",
+        organization: "WealthEngine",
+        title: "Senior Data Services Analyst"
+    },{
+        text: <div><p></p></div>,
+        colleague: "Alex Poulos",
+        organization: "The Washington Post",
+        title: "Senior Full-Stack Engineer"
     },
 ]

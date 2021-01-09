@@ -58,8 +58,14 @@ function App() {
           {
             WORK.map((p,i) => 
               <div className="section" key={'work-' + i}>
-                <div className="is-size-4">{p.title}</div>
+                <h2 className="is-size-4">
+                  {p.title} &nbsp;
+                  {p.link && 
+                  <small style={{fontSize: '13px'}}><a href={p.link} rel="noreferrer" target="_blank">View App ></a></small>
+                  }
+                </h2>
                 <p>{p.description}</p>
+                
                 {p.images.map(i => 
                   <img src={i.src} alt={i.alt} width={i.size} /> 
                 )}
@@ -78,7 +84,7 @@ function App() {
           <p>You don't have to take my word for it. Here is what some of my colleagues have written about working with me. Find more on my <a href="https://www.linkedin.com/in/benhofer/" rel="noreferrer" target="_blank">LinkedIn profile</a>.</p>
           {
             TESTIMONIALS.map((t,i) => 
-              <div key={'testimonial-' + i} className="section">
+              <div key={'testimonial-' + i} className="section mb-3">
                 <h2 className="is-size-5">
                   {t.text}
                 </h2>
@@ -94,7 +100,7 @@ function App() {
         <section className="links container p-6">
           { ABOUT.links.map((link,i) => <span key={'link-'+i}>{link}</span>)}
         </section>
-        <div className="content has-text-centered">
+        <div className="content has-text-centered p-3">
           <p>
             &copy; Copyright 2021 Ben Hofer
           </p>
