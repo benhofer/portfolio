@@ -80,6 +80,8 @@ h1.title svg {
   background: olive;  
   color: white;
   border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #testimonials .sub-section {
@@ -110,4 +112,15 @@ h1.title svg {
 
 .footer .links a {
   padding: .75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .portrait {
+    margin: 0 auto;
+    width: 300px;
+    display: block;
+  }
+  .hero h1 {
+    text-align: center; 
+  }
 }

@@ -20,11 +20,12 @@ import wyr3 from './img/wyr3.jpg';
 
 
 export const ABOUT = {
-    title: <h1 className="title">I'm a Front-End Developer specializing in ReactJS</h1>,
-    text: <h2 className="subtitle">
-    I’ve been at it for over 10 years, creating user interfaces for government clients at <a href="https://www.publicissapient.com/industries/public-sector" rel="noreferrer" target="_blank">Sapient</a> and in the private sector for <a href="https://www.wealthengine.com" rel="noreferrer" target="_blank">WealthEngine</a> and <a href="https://www.keycaliber.com" rel="noreferrer" target="_blank">KeyCaliber</a>. I have seen the industry go through a myriad of changes. My experience, grit, and the joy of learning new technologies keep me alert and motivated. 
-    <br /><br />When I’m not coding, I love running, <a href="https://benhofer.bandcamp.com" rel="noreferrer" target="_blank">making music</a>, and legos with my kids on our dining room table.
-  </h2>,
+    title: "Front-End Developer specializing in ReactJS",
+    text: <div><p className="subtitle">
+        I’ve been at it for over 10 years, creating user interfaces for government clients at <a href="https://www.publicissapient.com/industries/public-sector" rel="noreferrer" target="_blank">Sapient</a> and in the private sector for <a href="https://www.wealthengine.com" rel="noreferrer" target="_blank">WealthEngine</a> and <a href="https://www.keycaliber.com" rel="noreferrer" target="_blank">KeyCaliber</a>. 
+        I have seen the industry go through a myriad of changes. My experience, grit, and the joy of learning new technologies keep me alert and motivated. 
+        </p><p className="subtitle">When I’m not coding, I love running, <a href="https://benhofer.bandcamp.com" rel="noreferrer" target="_blank">making music</a>, and legos with my kids on our dining room table.</p>
+    </div>,
   links: [
     <a href="http://twitter.com/benhofer" rel="noreferrer" target="_blank">
         <Icon icon={twitter} width="32px" /> <span className="is-sr-only">Twitter</span></a>,
