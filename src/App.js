@@ -1,21 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import { ABOUT, WORK, TESTIMONIALS } from './content';
 import ben from './img/ben.jpg'
 
 function App() {
+  const [menu, setMenu] = useState(false);
+
+  const handleSetMenu = () => {
+    let m = menu;
+    setMenu(!m);
+  }
+
   return (
     <div>
       <div className="container main-container">
-        
         <nav className="navbar py-4" role="navigation" aria-label="main navigation">
-          <h1 className="navbar-brand is-size-4">
-            <a className="navbar-item" href="/">
-              <b>BEN HOFER</b>
+          <div className="navbar-brand">
+            <h1 className="is-size-4">
+              <a className="navbar-item" href="/">
+                <b>BEN HOFER</b>
+              </a>
+            </h1>
+            <a role="button" class={"navbar-burger" + " " + (menu && 'is-active')} onClick={handleSetMenu} aria-label="menu" aria-expanded={menu}>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
-          </h1>
+          </div>
 
-          <div id="navbarBasicExample" className="navbar-menu">
+          <div id="navbarBasicExample" className={"navbar-menu " + (menu && 'is-active')}>
             <div className="navbar-end">
               <a href="#about-me" className="navbar-item">
                 About Me
