@@ -14,39 +14,37 @@ function App() {
   return (
     <div>
       <div className="container main-container">
-        <nav className="navbar py-4" role="navigation" aria-label="main navigation">
-          <div className="navbar-brand">
-            <h1 className="is-size-4">
-              <a className="navbar-item" href="/">
-                <b>BEN HOFER</b>
+        <div className="nav-container">
+          <nav className="navbar container py-4" role="navigation" aria-label="main navigation">
+            <div className="navbar-brand">
+              <h1 className="is-size-4">
+                <a className="navbar-item" href="/">
+                  <b>BEN HOFER</b>
+                </a>
+              </h1>
+              <a role="button" class={"navbar-burger" + " " + (menu && 'is-active')} onClick={handleSetMenu} aria-label="menu" aria-expanded={menu}>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
               </a>
-            </h1>
-            <a role="button" class={"navbar-burger" + " " + (menu && 'is-active')} onClick={handleSetMenu} aria-label="menu" aria-expanded={menu}>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-
-          <div id="navbarBasicExample" className={"navbar-menu " + (menu && 'is-active')}>
-            <div className="navbar-end">
-              <a href="#about-me" className="navbar-item">
-                About Me
-              </a>
-
-              <a href="#work" className="navbar-item">
-                Work
-              </a>
-
-              <a href="#testimonials" className="navbar-item">
-                Testimonials
-              </a>
-
             </div>
-          </div>
-        </nav>
+            <div id="navbarBasicExample" className={"navbar-menu " + (menu && 'is-active')}>
+              <div className="navbar-end">
+                <a href="#about-me" className="navbar-item" onClick={handleSetMenu}>
+                  About Me
+                </a>
+                <a href="#work" className="navbar-item" onClick={handleSetMenu}>
+                  Work
+                </a>
+                <a href="#testimonials" className="navbar-item" onClick={handleSetMenu}>
+                  Testimonials
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
 
-        <section className="hero" id="about-me">
+        <section className="hero section" id="about-me">
           <div className="hero-body p-6">
             <div className="container columns">
               <div className="column is-one-quarter">
