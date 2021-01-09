@@ -8,6 +8,10 @@
   margin-bottom: -316px;
 }
 
+.links a {
+  padding-right: 1.5rem;
+}
+
 .footer {
   background: WhiteSmoke;
 }
@@ -18,12 +22,11 @@
 }
 
 .footer .links a {
-  padding: 0 1rem;
+  padding: .75rem;
 }
 
 .hero {
   background: WhiteSmoke!important;
-  margin-bottom: 2rem;
 }
 
 .portrait {
@@ -31,4 +34,12 @@
   border-radius: 400px;
   border: 8px solid white;
   box-shadow: 0 0 8px silver;
+}
+
+#testimonials .section {
+  background: WhiteSmoke;
+}
+
+#testimonials p {
+  margin-bottom: 2rem;
 }
