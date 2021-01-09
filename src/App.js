@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import './App.css';
 import { ABOUT, WORK, TESTIMONIALS } from './content';
 import ben from './img/ben.jpg'
+import { Icon } from '@iconify/react';
+import quote from '@iconify/icons-bx/bxs-quote-alt-left';
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -65,7 +67,7 @@ function App() {
 
 
         <section className="section" id="work">
-          <h1 className="title">Work</h1>
+          <h1 className="title has-text-centered">Work</h1>
           {
             WORK.map((p,i) => 
               <div className="sub-section" key={'work-' + i}>
@@ -91,11 +93,12 @@ function App() {
         </section>
 
         <section className="section" id="testimonials">
-          <h1 className="title">Testimonials</h1>
+          <h1 className="title has-text-centered">Testimonials</h1>
           <p>You don't have to take my word for it. Here is what some of my colleagues have written about working with me. Find more on my <a href="https://www.linkedin.com/in/benhofer/" rel="noreferrer" target="_blank">LinkedIn profile</a>.</p>
           {
             TESTIMONIALS.map((t,i) => 
-              <div key={'testimonial-' + i} className="section mb-3">
+              <div key={'testimonial-' + i} className="sub-section mb-6">
+                <Icon icon={quote} width="62px" style={{color: 'gray'}} /> 
                 <h2 className="is-size-5">
                   {t.text}
                 </h2>

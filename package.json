@@ -35,5 +35,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@iconify/icons-bi": "^1.1.0",
+    "@iconify/icons-bx": "^1.1.0",
+    "@iconify/icons-foundation": "^1.1.0",
+    "@iconify/icons-mdi": "^1.1.2",
+    "@iconify/icons-mdi-light": "^1.1.0",
+    "@iconify/react": "^2.0.0-rc.4"
   }
 }

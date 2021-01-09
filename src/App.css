@@ -6,6 +6,11 @@
   padding-top: 6rem;
 }
 
+h1.title svg {
+  position: relative;
+  top: 4px;
+}
+
 .sub-section {
   padding: 1.5rem 0;
 }
@@ -35,6 +40,11 @@
 
 .links a {
   padding-right: 1.5rem;
+  color: gray;
+}
+
+.links a:hover, .links a:focus {
+  color: #3273dc;
 }
 
 .hero {
@@ -63,8 +73,16 @@
   border-radius: 4px;
 }
 
-#testimonials .section {
+#testimonials .sub-section {
   background: WhiteSmoke;
+  position: relative;
+  padding: 3rem;
+}
+
+#testimonials .sub-section svg {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
 }
 
 #testimonials p {
