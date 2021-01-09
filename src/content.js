@@ -13,6 +13,9 @@ import weP2G from './img/we-p2g.jpg';
 import weProspect from './img/we-prospect.jpg';
 import tempora1 from './img/tempora1.jpg';
 import tempora2 from './img/tempora2.jpg';
+import wyr1 from './img/wyr1.jpg';
+import wyr2 from './img/wyr2.jpg';
+import wyr3 from './img/wyr3.jpg';
 
 
 
@@ -20,7 +23,7 @@ export const ABOUT = {
     title: <h1 className="title">I'm a Front-End Developer specializing in ReactJS</h1>,
     text: <h2 className="subtitle">
     I’ve been at it for over 10 years, creating user interfaces for government clients at <a href="https://www.publicissapient.com/industries/public-sector" rel="noreferrer" target="_blank">Sapient</a> and in the private sector for <a href="https://www.wealthengine.com" rel="noreferrer" target="_blank">WealthEngine</a> and <a href="https://www.keycaliber.com" rel="noreferrer" target="_blank">KeyCaliber</a>. I have seen the industry go through a myriad of changes. My experience, grit, and the joy of learning new technologies keep me alert and motivated. 
-    <br /><br />When I’m not coding, I love running, <a href="https://benhofer.bandcamp.com" rel="noreferrer" target="_blank">music</a>, and legos with my kids on our dining room table.
+    <br /><br />When I’m not coding, I love running, <a href="https://benhofer.bandcamp.com" rel="noreferrer" target="_blank">making music</a>, and legos with my kids on our dining room table.
   </h2>,
   links: [
     <a href="http://twitter.com/benhofer" rel="noreferrer" target="_blank">
@@ -72,7 +75,7 @@ export const WORK = [
             "HTML", "CSS", "Sass/scss",  "JavaScript", "AngularJS"
         ]
     },{
-        title: "Tempora App",
+        title: "Centering Prayer App",
         description: "Worked with a friend to implement his vision for an app to aid spiritual seekers in centering prayer using Scripture and other spiritual verses. The app features simple background color animations and custom audio for each meditation. Each meditation presents a consistent audio format: a bell rings, the verse is read, then the bell is rung again. The user is then invited to meditate on the passage for a certain amount of time. At the end the bells and passage audio is again played.",
         link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
         images: [
@@ -84,9 +87,9 @@ export const WORK = [
     },{
         title: "Would You Rather App ",
         description: "This project was for the Udacity ReactJS Nanodegree. The assignment was to build an app which would allow users to create “Would You Rather” questions and also to vote on them. The demo features three made-up users.",
-        link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
+        link: "https://master.d2jo2yzx5ypc0r.amplifyapp.com/",
         images: [
-
+            wyr1, wyr2, wyr3
         ],
         technologies: [
             "HTML", "CSS", "JavaScript", "ReactJS"
@@ -111,10 +114,11 @@ export const TESTIMONIALS = [
         colleague: "Zara Schiavo-Campo",
         organization: "WealthEngine",
         title: "Senior Data Services Analyst"
-    },{
-        text: <div><p></p></div>,
-        colleague: "Alex Poulos",
-        organization: "The Washington Post",
-        title: "Senior Full-Stack Engineer"
     },
+    // {
+    //     text: <div><p></p></div>,
+    //     colleague: "Alex Poulos",
+    //     organization: "The Washington Post",
+    //     title: "Senior Full-Stack Engineer"
+    // },
 ]
