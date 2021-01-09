@@ -68,7 +68,7 @@ function App() {
           <h1 className="title">Work</h1>
           {
             WORK.map((p,i) => 
-              <div className="section" key={'work-' + i}>
+              <div className="sub-section" key={'work-' + i}>
                 <h2 className="is-size-4">
                   {p.title} &nbsp;
                   {p.link && 

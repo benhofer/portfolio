@@ -6,12 +6,25 @@
   padding-top: 6rem;
 }
 
+.sub-section {
+  padding: 1.5rem 0;
+}
+
 .nav-container {
   position: fixed;
   padding: 0;
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 100;
+}
+
+.navbar {
+  background: white;
+}
+
+.navbar-menu {
+  box-shadow: none;
 }
 
 .main-container {
