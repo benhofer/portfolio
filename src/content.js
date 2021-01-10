@@ -16,6 +16,7 @@ import tempora2 from './img/tempora2.jpg';
 import wyr1 from './img/wyr1.jpg';
 import wyr2 from './img/wyr2.jpg';
 import wyr3 from './img/wyr3.jpg';
+import kc from './img/keycaliber.jpg';
 
 
 
@@ -37,6 +38,28 @@ export const ABOUT = {
 }
 
 export const WORK = [
+    {
+        title: "KeyCaliber Website",
+        description: "Along with the team at KeyCaliber I implemented their public website and a new UI for their flagship product.",
+        link: "https://www.keycaliber.com",
+        images: [
+            kc
+        ],
+        technologies: [
+            "HTML", "CSS", "JavaScript", "ReactJS", "React Router"
+        ]
+    },
+    {
+        title: "Centering Prayer App",
+        description: "Worked with a friend to implement his vision for an app to aid spiritual seekers in centering prayer. The app features simple background color animations and custom audio for each meditation. Each meditation presents a consistent audio format: a bell rings, a text is read, then the bell rings a second time. The user is then invited to meditate on the passage. At the end the bells and text are played again.",
+        link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
+        images: [
+            tempora1, tempora2
+        ],
+        technologies: [
+            "HTML", "CSS", "JavaScript", "ReactJS", "React Router"
+        ]
+    },
     {
         title: "WealthEngine Administration Suite",
         description: <p>Worked on an Agile Tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.</p>, 
@@ -75,16 +98,6 @@ export const WORK = [
         ],
         technologies: [
             "HTML", "CSS", "Sass/scss",  "JavaScript", "AngularJS"
-        ]
-    },{
-        title: "Centering Prayer App",
-        description: "Worked with a friend to implement his vision for an app to aid spiritual seekers in centering prayer using Scripture and other spiritual texts. The app features simple background color animations and custom audio for each meditation. Each meditation presents a consistent audio format: a bell rings, the text is read, then the bell rings a second time. The user is then invited to meditate on the passage. At the end the bells and text are played again.",
-        link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
-        images: [
-            tempora1, tempora2
-        ],
-        technologies: [
-            "HTML", "CSS", "JavaScript", "ReactJS", "React Router"
         ]
     },{
         title: "Would You Rather App ",

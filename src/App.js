@@ -73,7 +73,7 @@ function App() {
 
 
         <section className="section" id="work">
-          <h1 className="title has-text-centered">Past Work</h1>
+          <h1 className="title has-text-centered">Recent Work</h1>
           {
             WORK.map((p,i) => 
               <div className={`${i%2 ? 'reverse' : ''} sub-section`} key={'work-' + i}>
