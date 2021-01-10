@@ -20,11 +20,12 @@ import wyr3 from './img/wyr3.jpg';
 
 
 export const ABOUT = {
-    title: "Front-End Developer specializing in ReactJS",
-    text: <div><p className="subtitle">
+    title: "Front-End Developer",
+    subtitle: "Specializing in ReactJS",
+    text: <div><p>
         I’ve been at it for over 10 years, creating user interfaces for government clients at <a href="https://www.publicissapient.com/industries/public-sector" rel="noreferrer" target="_blank">Sapient</a> and in the private sector for <a href="https://www.wealthengine.com" rel="noreferrer" target="_blank">WealthEngine</a> and <a href="https://www.keycaliber.com" rel="noreferrer" target="_blank">KeyCaliber</a>. 
         I have seen the industry go through a myriad of changes. My experience, grit, and the joy of learning new technologies keep me alert and motivated. 
-        </p><p className="subtitle">When I’m not coding, I love running, <a href="https://benhofer.bandcamp.com" rel="noreferrer" target="_blank">making music</a>, and legos with my kids on our dining room table.</p>
+        </p><p>When I’m not coding, I love running, <a href="https://benhofer.bandcamp.com" rel="noreferrer" target="_blank">making music</a>, and legos with my kids on our dining room table.</p>
     </div>,
   links: [
     <a href="http://github.com/benhofer" rel="noreferrer" target="_blank"><Icon icon={github} width="32px" /> <span className="is-sr-only">Github</span></a>,
@@ -38,7 +39,7 @@ export const ABOUT = {
 export const WORK = [
     {
         title: "WealthEngine Administration Suite",
-        description: <p>Worked on an agile tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.</p>, 
+        description: <p>Worked on an Agile Tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.</p>, 
         images: [
             weAdmin1, weAdmin2, weAdmin3, weAdmin4, weAdmin5
         ],
@@ -77,7 +78,7 @@ export const WORK = [
         ]
     },{
         title: "Centering Prayer App",
-        description: "Worked with a friend to implement his vision for an app to aid spiritual seekers in centering prayer using Scripture and other spiritual verses. The app features simple background color animations and custom audio for each meditation. Each meditation presents a consistent audio format: a bell rings, the verse is read, then the bell is rung again. The user is then invited to meditate on the passage for a certain amount of time. At the end the bells and passage audio is again played.",
+        description: "Worked with a friend to implement his vision for an app to aid spiritual seekers in centering prayer using Scripture and other spiritual texts. The app features simple background color animations and custom audio for each meditation. Each meditation presents a consistent audio format: a bell rings, the text is read, then the bell rings a second time. The user is then invited to meditate on the passage. At the end the bells and text are played again.",
         link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
         images: [
             tempora1, tempora2
@@ -115,7 +116,7 @@ export const TESTIMONIALS = [
         colleague: "Zara Schiavo-Campo",
         organization: "WealthEngine",
         title: "Senior Data Services Analyst"
-    },
+    }
     // {
     //     text: <div><p></p></div>,
     //     colleague: "Alex Poulos",

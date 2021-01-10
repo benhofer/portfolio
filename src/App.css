@@ -6,9 +6,19 @@
   padding-top: 6rem;
 }
 
+h1.page-title {
+  font-size: 3rem;
+}
+
+h1.title {}
+
 h1.title svg {
   position: relative;
   top: 4px;
+}
+
+.about-text p {
+  margin-bottom: .5rem;
 }
 
 .sub-section {
@@ -38,6 +48,13 @@ h1.title svg {
   margin-bottom: -316px;
 }
 
+@media screen and (max-width: 768px) {
+  .links {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .links a {
   padding-right: 1.5rem;
   color: gray;
@@ -51,9 +68,23 @@ h1.title svg {
   background: WhiteSmoke!important;
 }
 
+.portrait-col {
+  width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .portrait-col {
+    margin-right: 0;
+    display: block; 
+    width: 100%;
+  }
+}
+
 .portrait {
   width: 400px;
   border-radius: 400px;
+  margin: 0 auto;
+  display: block;
   border: 8px solid white;
   box-shadow: 0 0 8px silver;
 }
@@ -64,23 +95,28 @@ h1.title svg {
 }
 .product-img {
   border: 1px solid silver;
-  margin: 1rem 1rem 1rem 0;
+  margin: 0 1rem 1rem 0;
+}
+
+.sub-section.reverse .columns {
+  flex-direction: row-reverse;
 }
 
 .technologies {
   display: flex; 
   padding: 1rem 0;
   justify-content: left;
+  flex-wrap: wrap;
 }
 
 .technologies li { 
   font-weight: bold;
-  padding: .25rem .5rem;
+  padding: .25rem 1rem;
   margin-right: .25rem;
-  background: olive;  
-  color: white;
+  background: whitesmoke;
   border-radius: 4px;
   display: flex;
+  margin-bottom: .5rem;
   justify-content: space-between;
 }
 
@@ -120,7 +156,7 @@ h1.title svg {
     width: 300px;
     display: block;
   }
-  .hero h1 {
+  .hero h1, .hero .subtitle {
     text-align: center; 
   }
 }

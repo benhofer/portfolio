@@ -18,7 +18,7 @@ function App() {
     <div>
       <div className="container main-container">
         <div className="nav-container">
-          <nav className="navbar container py-4" role="navigation" aria-label="main navigation">
+          <nav className="navbar container px-3 py-4" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
               <h1 className="is-size-4">
                 <a className="navbar-item is-uppercase" href="/">
@@ -47,21 +47,24 @@ function App() {
           </nav>
         </div>
 
-        <section className="hero section" id="about-me">
-          <div className="hero-body p-6">
-            <div className="container columns">
-              <div className="column is-one-quarter">
-                <img src={ben} className='portrait' alt="Portrait" />
-              </div>
-              <div className="column pt-6 pb-0">
-                  <div>
-                    <h1 className="title mb-6">{ ABOUT.title }</h1>
-                    <div className="mb-6">
-                      { ABOUT.text }
-                    </div>
-                    <section className="links pt-4">
-                      { ABOUT.links.map((link,i) => <span key={'link-'+i}>{link}</span>)}
-                    </section>
+        <section className="section" id="about-me">
+          <div className="hero">
+            <div className="hero-body p-6">
+              <div className="container columns">
+                <div className="column portrait-col">
+                  <img src={ben} className='portrait' alt="Portrait" />
+                </div>
+                <div className="column pt-6 pb-0">
+                    <div>
+                      <h1 className="title page-title">{ ABOUT.title }</h1>
+                      <div className="subtitle mb-4">{ ABOUT.subtitle }</div>
+                      <div className="mb-6 about-text">
+                        { ABOUT.text }
+                      </div>
+                      <section className="links pt-4">
+                        { ABOUT.links.map((link,i) => <span key={'link-'+i}>{link}</span>)}
+                      </section>
+                  </div>
                 </div>
               </div>
             </div>
@@ -70,31 +73,36 @@ function App() {
 
 
         <section className="section" id="work">
-          <h1 className="title has-text-centered">Work</h1>
+          <h1 className="title has-text-centered">Past Work</h1>
           {
             WORK.map((p,i) => 
-              <div className="sub-section" key={'work-' + i}>
-                <div className="mb-4">
-                  <h2 className="is-size-4">
-                    {p.title} &nbsp;
-                    {p.link && 
-                    <small style={{fontSize: '13px'}}><a href={p.link} rel="noreferrer" target="_blank">View App ></a></small>
-                    }
-                  </h2>
-                  <p>{p.description}</p>
-                </div>
-                  {p.images.map(i => 
-                    <div className="product-img-wrapper">
-                      <img className="product-img" src={i} alt='' width="100%" /> 
-                    </div>
-                  )}                
+              <div className={`${i%2 ? 'reverse' : ''} sub-section`} key={'work-' + i}>
+                <h2 className="is-size-4">
+                  {p.title} &nbsp;
+                  {p.link && 
+                  <small style={{fontSize: '13px'}}><a href={p.link} rel="noreferrer" target="_blank">View App ></a></small>
+                  }
+                </h2>
                 <ul className="technologies">
                   {p.technologies.map((t,i) => 
                     <li key={'tech-'+i}>
-                      <Icon icon={check} style={{color: 'white'}} width="24px" />
-                      <b>{t}</b></li>
+                      <Icon icon={check} width="24px" />
+                      <i>{t}</i></li>
                   )}
                 </ul>
+                <div className="columns">
+                  <div className={`mb-4 px-4 column is-one-third`}>
+                    <p>{p.description}</p>
+                  </div>
+                  <div className="column is-two-thirds">
+                    {p.images.map(i => 
+                        <div className="product-img-wrapper mx-4">
+                          <img className="product-img" src={i} alt='' width="100%" /> 
+                        </div>
+                      )}        
+                  </div>                
+                </div>
+                
               </div>
             )
           }
@@ -102,18 +110,20 @@ function App() {
 
         <section className="section" id="testimonials">
           <h1 className="title has-text-centered">Testimonials</h1>
-          <p>You don't have to take my word for it. Here is what some of my colleagues have written about working with me. Find more on my <a href="https://www.linkedin.com/in/benhofer/" rel="noreferrer" target="_blank">LinkedIn profile</a>.</p>
-          {
-            TESTIMONIALS.map((t,i) => 
-              <div key={'testimonial-' + i} className="sub-section mb-6">
-                <Icon icon={quote} width="62px" style={{color: 'gray'}} /> 
-                <h2 className="is-size-5">
-                  {t.text}
-                </h2>
-                <p><strong>{t.colleague}, {t.title}, {t.organization}</strong></p>
-              </div>
-            
-            )}
+          <p>Here are some kind words from my colleagues. Find more on my <a href="https://www.linkedin.com/in/benhofer/" rel="noreferrer" target="_blank">LinkedIn profile</a>.</p>
+          <div className="columns">
+            {
+              TESTIMONIALS.map((t,i) => 
+                <div key={'testimonial-' + i} className="column mx-2 sub-section mb-6">
+                  <Icon icon={quote} width="62px" style={{color: 'gray'}} /> 
+                  <h2 className="is-size-5">
+                    {t.text}
+                  </h2>
+                  <p><strong>{t.colleague}, {t.title}, {t.organization}</strong></p>
+                </div>
+              
+              )}
+          </div>
         </section>
         
       
