@@ -24,9 +24,8 @@ export const ABOUT = {
     title: "Front-End Developer",
     subtitle: "Specializing in ReactJS",
     text: <div><p>
-        I’ve been at it for over 10 years, creating user interfaces for government clients at <a href="https://www.publicissapient.com/industries/public-sector" rel="noreferrer" target="_blank">Sapient</a> and in the private sector for <a href="https://www.wealthengine.com" rel="noreferrer" target="_blank">WealthEngine</a> and <a href="https://www.keycaliber.com" rel="noreferrer" target="_blank">KeyCaliber</a>. 
-        I have seen the industry go through a myriad of changes. My experience, grit, and the joy of learning new technologies keep me alert and motivated. 
-        </p><p>When I’m not coding, I love running, <a href="https://benhofer.bandcamp.com" rel="noreferrer" target="_blank">making music</a>, and playing legos with my kids on our dining room table.</p>
+        I’ve been at it for over 10 years, creating user interfaces for government clients at <a href="https://www.publicissapient.com/industries/public-sector" rel="noreferrer" target="_blank">Sapient</a> and in the private sector for <a href="https://www.wealthengine.com" rel="noreferrer" target="_blank">WealthEngine</a> and <a href="https://www.keycaliber.com" rel="noreferrer" target="_blank">KeyCaliber</a>.</p>        
+        <p>When I’m not coding, I love running, <a href="https://benhofer.bandcamp.com" rel="noreferrer" target="_blank">making music</a>, and playing legos with my kids on our dining room table.</p>
     </div>,
   links: [
     <a href="http://github.com/benhofer" rel="noreferrer" target="_blank"><Icon icon={github} width="32px" /> <span className="is-sr-only">Github</span></a>,
@@ -62,7 +61,7 @@ export const WORK = [
     },
     {
         title: "WealthEngine Administration Suite",
-        description: <p>Worked on an Agile Tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.</p>, 
+        description: "Worked on an Agile Tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.", 
         images: [
             weAdmin1, weAdmin2, weAdmin3, weAdmin4, weAdmin5
         ],
@@ -129,11 +128,21 @@ export const TESTIMONIALS = [
         colleague: "Zara Schiavo-Campo",
         organization: "WealthEngine",
         title: "Senior Data Services Analyst"
-    }
-    // {
-    //     text: <div><p></p></div>,
-    //     colleague: "Alex Poulos",
-    //     organization: "The Washington Post",
-    //     title: "Senior Full-Stack Engineer"
-    // },
+    },{
+        text: <div><p>
+                I worked with Ben in WealthEngine where he was responsible for designing the UX/UI components for my team. Ben is not only a very passionate and enthusiastic UX designer but also a hardworking and dedicated UI engineer. He always looks at UI from the users' perspective and his suggestions for UI layouts are fresh and creative. His quick-learning capabilities are great add-ons. On the personal front, he is very friendly to work with. I would highly recommend him for any UX/UI role and wish him all the best for future endeavours.
+            </p></div>,
+        colleague: "Ullash Nandan",
+        organization: "WealthEngine",
+        title: "Software Development Manager"
+
+    },
+    {
+        text: <div><p>
+        By combining an artist’s eye with JavaScript chops, Ben brings vivid front-end experiences to life! I’m a full-stack dev, but lean towards the back-end side of things. Ben helped me create a beautiful front-end web experience for Tempora, a meditation app I work on in my free time.
+        </p></div>,
+        colleague: "Alex Poulos",
+        organization: "The Washington Post",
+        title: "Full Stack Engineer"
+    },
 ]

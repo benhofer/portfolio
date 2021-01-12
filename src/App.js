@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-      <div className="container main-container">
+      <div className="main-container">
         <div className="nav-container">
           <nav className="navbar container px-3 py-4" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
@@ -25,7 +25,7 @@ function App() {
                   <b>Ben Hofer</b>
                 </a>
               </h1>
-              <a role="button" class={"navbar-burger" + " " + (menu && 'is-active')} onClick={handleSetMenu} aria-label="menu" aria-expanded={menu}>
+              <a role="button" className={"navbar-burger" + " " + (menu && 'is-active')} onClick={handleSetMenu} aria-label="menu" aria-expanded={menu}>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -47,10 +47,10 @@ function App() {
           </nav>
         </div>
 
-        <section className="section" id="about-me">
+        <section className="section px-0" id="about-me">
           <div className="hero">
-            <div className="hero-body p-6">
-              <div className="container columns">
+            <div className="hero-body container p-6">
+              <div className="columns">
                 <div className="column portrait-col">
                   <img src={ben} className='portrait' alt="Portrait" />
                 </div>
@@ -71,62 +71,62 @@ function App() {
           </div>
         </section>
 
-
-        <section className="section" id="work">
-          <h1 className="title has-text-centered">Recent Work</h1>
-          {
-            WORK.map((p,i) => 
-              <div className={`${i%2 ? 'reverse' : ''} sub-section`} key={'work-' + i}>
-                <h2 className="is-size-4">
-                  {p.title} &nbsp;
-                  {p.link && 
-                  <small style={{fontSize: '13px'}}><a href={p.link} rel="noreferrer" target="_blank">View App ></a></small>
-                  }
-                </h2>
-                <ul className="technologies">
-                  {p.technologies.map((t,i) => 
-                    <li key={'tech-'+i}>
-                      <Icon icon={check} width="24px" />
-                      <i>{t}</i></li>
-                  )}
-                </ul>
-                <div className="columns">
-                  <div className={`mb-4 px-4 column is-one-third`}>
-                    <p>{p.description}</p>
-                  </div>
-                  <div className="column is-two-thirds">
-                    {p.images.map(i => 
-                        <div className="product-img-wrapper mx-4">
-                          <img className="product-img" src={i} alt='' width="100%" /> 
-                        </div>
-                      )}        
-                  </div>                
-                </div>
-                
-              </div>
-            )
-          }
-        </section>
-
-        <section className="section" id="testimonials">
-          <h1 className="title has-text-centered">Testimonials</h1>
-          <p>Here are some kind words from my colleagues. Find more on my <a href="https://www.linkedin.com/in/benhofer/" rel="noreferrer" target="_blank">LinkedIn profile</a>.</p>
-          <div className="columns">
+        <div className="container">
+          <section className="section" id="work">
+            <h1 className="title has-text-centered">Recent Work</h1>
             {
-              TESTIMONIALS.map((t,i) => 
-                <div key={'testimonial-' + i} className="column mx-2 sub-section mb-6">
-                  <Icon icon={quote} width="62px" style={{color: 'gray'}} /> 
-                  <h2 className="is-size-5">
-                    {t.text}
+              WORK.map((p,i) => 
+                <div className={`${i%2 ? 'reverse' : ''} sub-section`} key={'work-' + i}>
+                  <h2 className="is-size-4">
+                    {p.title} &nbsp;
+                    {p.link && 
+                    <small style={{fontSize: '13px'}}><a href={p.link} rel="noreferrer" target="_blank">View Site ></a></small>
+                    }
                   </h2>
-                  <p><strong>{t.colleague}, {t.title}, {t.organization}</strong></p>
+                  <ul className="technologies">
+                    {p.technologies.map((t,i) => 
+                      <li key={'tech-'+i}>
+                        <Icon icon={check} width="24px" />
+                        <i>{t}</i></li>
+                    )}
+                  </ul>
+                  <div className="columns">
+                    <div className={`mb-4 px-4 column is-one-third`}>
+                      <p>{p.description}</p>
+                    </div>
+                    <div className="column is-two-thirds">
+                      {p.images.map((m, i) => 
+                          <div key={"img-" + i} className="product-img-wrapper mx-4">
+                            <img className="product-img" src={m} alt='' width="100%" /> 
+                          </div>
+                        )}        
+                    </div>                
+                  </div>
+                  
                 </div>
-              
-              )}
-          </div>
-        </section>
-        
-      
+              )
+            }
+          </section>
+
+          <section className="section" id="testimonials">
+            <h1 className="title has-text-centered">Testimonials</h1>
+            <p>Here are some kind words from my colleagues. Find more on my <a href="https://www.linkedin.com/in/benhofer/" rel="noreferrer" target="_blank">LinkedIn profile</a>.</p>
+            <div className="columns" style={{flexWrap: 'wrap'}}>
+              {
+                TESTIMONIALS.map((t,i) => 
+                  <div key={'testimonial-' + i} style={{minWidth: '45%'}} className="column mx-5 sub-section mb-6">
+                    <Icon icon={quote} width="62px" style={{color: 'gray'}} /> 
+                    <h2 className="is-size-5">
+                      {t.text}
+                    </h2>
+                    <p><strong>{t.colleague}, {t.title}, {t.organization}</strong></p>
+                  </div>
+                
+                )}
+            </div>
+          </section>
+      </div>
+                
       </div>
       <footer className="footer">
         <section className="links container p-6">
