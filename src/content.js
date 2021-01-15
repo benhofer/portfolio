@@ -21,7 +21,7 @@ import kc from './img/keycaliber.jpg';
 
 
 export const ABOUT = {
-    title: "Front-End Developer",
+    title: "Frontend Developer",
     subtitle: "Specializing in ReactJS",
     text: <div><p>
         I’ve been at it for over 10 years, creating user interfaces for government clients at <a href="https://www.publicissapient.com/industries/public-sector" rel="noreferrer" target="_blank">Sapient</a> and in the private sector for <a href="https://www.wealthengine.com" rel="noreferrer" target="_blank">WealthEngine</a> and <a href="https://www.keycaliber.com" rel="noreferrer" target="_blank">KeyCaliber</a>.</p>        

@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
 import './App.css';
 import { ABOUT, WORK, TESTIMONIALS } from './content';
-import ben from './img/ben.jpg'
+import ben from './img/lego-ben.jpg'
+import heroImg from './img/hero-img.png'
 import { Icon } from '@iconify/react';
 import quote from '@iconify/icons-bx/bxs-quote-alt-left';
 import check from '@iconify/icons-mdi/check';
+import downArrow from '@iconify/icons-mdi/arrow-down-drop-circle';
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -22,7 +24,7 @@ function App() {
             <div className="navbar-brand">
               <h1 className="is-size-4">
                 <a className="navbar-item is-uppercase" href="/">
-                  <b>Ben Hofer</b>
+                  Ben Hofer
                 </a>
               </h1>
               <a role="button" className={"navbar-burger" + " " + (menu && 'is-active')} onClick={handleSetMenu} aria-label="menu" aria-expanded={menu}>
@@ -36,8 +38,8 @@ function App() {
                 <a href="#about-me" className="navbar-item" onClick={handleSetMenu}>
                   About Me
                 </a>
-                <a href="#work" className="navbar-item" onClick={handleSetMenu}>
-                  Work
+                <a href="#portfolio" className="navbar-item" onClick={handleSetMenu}>
+                  Portfolio
                 </a>
                 <a href="#testimonials" className="navbar-item" onClick={handleSetMenu}>
                   Testimonials
@@ -47,33 +49,40 @@ function App() {
           </nav>
         </div>
 
-        <section className="section px-0" id="about-me">
+        <section className="section" id="about-me">
           <div className="hero">
-            <div className="hero-body container p-6">
-              <div className="columns">
-                <div className="column portrait-col">
-                  <img src={ben} className='portrait' alt="Portrait" />
-                </div>
-                <div className="column pt-6 pb-0">
-                    <div>
-                      <h1 className="title page-title">{ ABOUT.title }</h1>
-                      <div className="subtitle mb-4">{ ABOUT.subtitle }</div>
-                      <div className="mb-6 about-text">
-                        { ABOUT.text }
-                      </div>
-                      <section className="links pt-4">
-                        { ABOUT.links.map((link,i) => <span key={'link-'+i}>{link}</span>)}
-                      </section>
+            <div className="hero-bg"></div>
+            <div className="hero-body p-6">
+              <div className="container px-5 pt-2">
+                <div className="columns">
+                  <div className="column">
+                    <h1 className="title page-title">{ ABOUT.title }</h1>
+                    <div className="subtitle is-size-4 mb-4">{ ABOUT.subtitle }</div>
+                    <div className="about-text mb-5">
+                      { ABOUT.text }
+                    </div>
+                    <section className="links">
+                      { ABOUT.links.map((link,i) => <span key={'link-'+i}>{link}</span>)}
+                    </section>
+                  </div>
+                  <div className="column">
+                    <img src={heroImg} alt="" width="100%" />
                   </div>
                 </div>
               </div>
+              <div className="button-column">
+                  <a href="#portfolio" className="button">
+                    <div>View My Portfolio</div>
+                    <Icon icon={downArrow} width="32px" />
+                  </a>
+                </div>
             </div>
           </div>
         </section>
 
         <div className="container">
-          <section className="section" id="work">
-            <h1 className="title has-text-centered">Recent Work</h1>
+          <section className="section" id="portfolio">
+            <h1 className="title has-text-centered">Portfolio</h1>
             {
               WORK.map((p,i) => 
                 <div className={`${i%2 ? 'reverse' : ''} sub-section`} key={'work-' + i}>
@@ -132,6 +141,9 @@ function App() {
         <section className="links container p-6">
           { ABOUT.links.map((link,i) => <span key={'link-'+i}>{link}</span>)}
         </section>
+        <div className="portrait-wrapper">
+          <img src={ben} className='portrait' alt="Portrait" />
+        </div>
         <div className="content has-text-centered p-3">
           <p>
             &copy; Copyright 2021 Ben Hofer
