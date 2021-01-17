@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import './App.css';
 import { ABOUT, WORK, TESTIMONIALS } from './content';
-import ben from './img/lego-ben.jpg'
-import heroImg from './img/hero-img.png'
+import ben from './img/lego-ben.jpg';
+import HeroImg from './hero-img';
 import { Icon } from '@iconify/react';
 import quote from '@iconify/icons-bx/bxs-quote-alt-left';
 import check from '@iconify/icons-mdi/check';
 import downArrow from '@iconify/icons-mdi/arrow-down-drop-circle';
+import rightArrow from '@iconify/icons-mdi/arrow-right-drop-circle';
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -27,11 +28,11 @@ function App() {
                   Ben Hofer
                 </a>
               </h1>
-              <a role="button" className={"navbar-burger" + " " + (menu && 'is-active')} onClick={handleSetMenu} aria-label="menu" aria-expanded={menu}>
+              <div role="button" className={"navbar-burger" + " " + (menu && 'is-active')} onClick={handleSetMenu} aria-label="menu" aria-expanded={menu}>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-              </a>
+              </div>
             </div>
             <div id="navbarBasicExample" className={"navbar-menu " + (menu && 'is-active')}>
               <div className="navbar-end">
@@ -53,7 +54,7 @@ function App() {
           <div className="hero">
             <div className="hero-bg"></div>
             <div className="hero-body p-6">
-              <div className="container px-5 pt-2">
+              <div className="container px-5 pt-6">
                 <div className="columns">
                   <div className="column">
                     <h1 className="title page-title">{ ABOUT.title }</h1>
@@ -66,7 +67,7 @@ function App() {
                     </section>
                   </div>
                   <div className="column">
-                    <img src={heroImg} alt="" width="100%" />
+                    <HeroImg />
                   </div>
                 </div>
               </div>
@@ -85,37 +86,83 @@ function App() {
             <h1 className="title has-text-centered">Portfolio</h1>
             {
               WORK.map((p,i) => 
-                <div className={`${i%2 ? 'reverse' : ''} sub-section`} key={'work-' + i}>
-                  <h2 className="is-size-4">
-                    {p.title} &nbsp;
-                    {p.link && 
-                    <small style={{fontSize: '13px'}}><a href={p.link} rel="noreferrer" target="_blank">View Site ></a></small>
-                    }
-                  </h2>
-                  <ul className="technologies">
-                    {p.technologies.map((t,i) => 
-                      <li key={'tech-'+i}>
-                        <Icon icon={check} width="24px" />
-                        <i>{t}</i></li>
-                    )}
-                  </ul>
-                  <div className="columns">
-                    <div className={`mb-4 px-4 column is-one-third`}>
-                      <p>{p.description}</p>
+                <div>
+                  <div className={`${i%2 ? 'reverse' : ''} sub-section category-header`} key={'work-' + i}>
+                    <h2 className="is-size-2 mb-2">
+                      {p.title} &nbsp;
+                    </h2>
+                    <div className="subtitle time">
+                      {p.time}
                     </div>
-                    <div className="column is-two-thirds">
-                      {p.images.map((m, i) => 
-                          <div key={"img-" + i} className="product-img-wrapper mx-4">
-                            <img className="product-img" src={m} alt='' width="100%" /> 
+                    { p.technologies && 
+                      <ul className="technologies">
+                          {p.technologies.map((t,j) => 
+                            <li key={'tech-'+j}>
+                              <Icon icon={check} width="24px" />
+                              <i>{t}</i></li>
+                          )}
+                        </ul>
+                    }
+                    
+                    <p className="mb-2">{p.description}</p>
+                      {p.link && 
+                        <a href={p.link} rel="noreferrer" target="_blank" style={{alignItems: 'center', display: 'flex'}}>
+                          View Site 
+                          <Icon icon={rightArrow} width="18px" className="ml-1" /> 
+                        </a>
+                      }    
+                  </div>                
+                  { p.projects && p.projects.map((project,j) => 
+                    <div className={`${j%2 ? 'reverse' : ''} sub-section`} key={'project-' + i}>
+                      <div className="project-header">
+                        <h3 className="is-size-4">{project.title}</h3>
+                        <ul className="technologies pb-5">
+                          {project.technologies.map((t,j) => 
+                            <li key={'tech-'+j}>
+                              <Icon icon={check} width="24px" />
+                              <i>{t}</i></li>
+                          )}
+                        </ul>
+                        <div className="columns">
+                          <div className={`mb-4 px-4 column is-one-third`}>
+                            <p className="mb-2">{project.description}</p>
+                            {project.link && 
+                              <a href={project.link} rel="noreferrer" target="_blank" style={{alignItems: 'center', display: 'flex'}}>
+                                View Site 
+                                <Icon icon={rightArrow} width="18px" className="ml-1" /> 
+                              </a>
+                            }
                           </div>
-                        )}        
-                    </div>                
+                          <div className="column is-two-thirds">
+                            {
+                              project.headerImg && 
+                              <div key={"img-" + j} className="product-img-wrapper mx-4">
+                                <img src={project.headerImg} alt='' width="100%" /> 
+                              </div>
+                            }
+                          </div>
+                      </div>
+                    </div>
+                    <div className="columns">
+                      {
+                        project.images && project.images.map((img,i) => 
+                          <div className={`column ${img[1]}`}>
+                            <img src={img[0]} alt="" />
+                          </div>
+                        )
+                      }
+                    </div>
+                    {
+                      project.images && project.thumbnails && 
+                      <img src={project.images[0]} alt="" />
+                    }
+                    
                   </div>
-                  
-                </div>
-              )
-            }
-          </section>
+                )}
+              </div>
+            )
+          }
+        </section>
 
           <section className="section" id="testimonials">
             <h1 className="title has-text-centered">Testimonials</h1>

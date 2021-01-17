@@ -3,26 +3,24 @@ import github from '@iconify/icons-foundation/social-github';
 import twitter from '@iconify/icons-foundation/social-twitter';
 import email from '@iconify/icons-mdi/email';
 import { Icon } from '@iconify/react';
-import weAdmin1 from './img/we-admin1.jpg';
-import weAdmin2 from './img/we-admin2.jpg';
-import weAdmin3 from './img/we-admin3.jpg';
-import weAdmin4 from './img/we-admin4.jpg';
-import weAdmin5 from './img/we-admin5.jpg';
-import weAnalysis from './img/we-analysis.jpg';
-import weP2G from './img/we-p2g.jpg';
-import weProspect from './img/we-prospect.jpg';
-import tempora1 from './img/tempora1.jpg';
-import tempora2 from './img/tempora2.jpg';
+import we from './img/portfolio/we.png';
+import weAdmin from './img/portfolio/we-admin.png';
+import weMatchStats from './img/portfolio/we-match-stats.png';
+// import weAdmin1 from './img/portfolio/admin-overview.png';
+// import weAdmin2 from './img/portfolio/admin-search.png';
+// import weAdmin3 from './img/portfolio/admin-screen.png';
+// import weAdmin4 from './img/portfolio/admin-plans.png';
+// import weAdmin5 from './img/portfolio/admin-users.png';
+import tempora from './img/portfolio/tempora.png';
 import wyr1 from './img/wyr1.jpg';
 import wyr2 from './img/wyr2.jpg';
 import wyr3 from './img/wyr3.jpg';
-import kc from './img/keycaliber.jpg';
-
-
+import kc from './img/portfolio/keycaliber.png';
+import kc2 from './img/portfolio/kc2.png';
 
 export const ABOUT = {
     title: "Frontend Developer",
-    subtitle: "Specializing in ReactJS",
+    subtitle: "Specializing in React",
     text: <div><p>
         I’ve been at it for over 10 years, creating user interfaces for government clients at <a href="https://www.publicissapient.com/industries/public-sector" rel="noreferrer" target="_blank">Sapient</a> and in the private sector for <a href="https://www.wealthengine.com" rel="noreferrer" target="_blank">WealthEngine</a> and <a href="https://www.keycaliber.com" rel="noreferrer" target="_blank">KeyCaliber</a>.</p>        
         <p>When I’m not coding, I love running, <a href="https://benhofer.bandcamp.com" rel="noreferrer" target="_blank">making music</a>, and playing legos with my kids on our dining room table.</p>
@@ -38,78 +36,109 @@ export const ABOUT = {
 
 export const WORK = [
     {
-        title: "KeyCaliber Website",
-        description: "Along with the team at KeyCaliber I implemented their public website and a new UI for their flagship product.",
-        link: "https://www.keycaliber.com",
+        title: "KeyCaliber",
+        description: "I built wireframes, UI and data visualizations for this cybersecurity startup's SaaS product and public marketing website.",
+        time: 'August 2020 - Present',
         images: [
-            kc
+            
         ],
-        technologies: [
-            "HTML", "CSS", "JavaScript", "ReactJS", "React Router"
+        projects: [
+            {
+                title: "Marketing Website", 
+                link: "https://www.keycaliber.com",
+                description: 'Description for the KeyCaliber marketing website.', 
+                headerImg: kc, 
+                technologies: [
+                    "HTML", "CSS", "JavaScript", "React", "React Router", "Responsive Design"
+                ],
+                images: [
+                    // [kc2, 'is-one-third-desktop', 'description']
+                ]
+            }, {
+                title: "Software-as-a-Service Product", 
+                description: 'Description for the KeyCaliber SaaS Product.', 
+                images: null,
+                technologies: [
+                    "HTML", "CSS", "JavaScript", "React", "React Router", "Material UI", "nivo"
+                ]
+            }
         ]
     },
     {
-        title: "Centering Prayer App",
-        description: "Worked with a friend to implement his vision for an app to aid spiritual seekers in centering prayer. The app features simple background color animations and custom audio for each meditation. Each meditation presents a consistent audio format: a bell rings, a text is read, then the bell rings a second time. The user is then invited to meditate on the passage. At the end the bells and text are played again.",
-        link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
+        title: "WealthEngine",
+        time: 'April 2014 - June 2020',
+        description: "I established, maintained and documented a UI pattern library for the WealthEngine data analytics platform. This served to organize the code and streamline frontend development by providing the team with reusable components and layouts.", 
         images: [
-            tempora1, tempora2
+            we
         ],
-        technologies: [
-            "HTML", "CSS", "JavaScript", "ReactJS", "React Router"
+        projects: [
+            {
+                title: "WE Admin",
+                description: "Built administration prototype using React. The tool provides comprehensive usage analytics, user management and several other features for team administrators. Coordinated with technology team and product management to ensure a successful handoff.", 
+                headerImg: weAdmin,
+                thumbnails: true,
+                images: [
+                    // [weAdmin1], [weAdmin2], [weAdmin3], [weAdmin4], [weAdmin5]
+                ],
+                technologies: [
+                    "HTML", "CSS", "Sass/scss",  "JavaScript", "React", "React Router", "HighCharts"
+                ]
+            },
+            {
+                title: "Wealth Analysis Summary",
+                description: "Created a dashboard for aggregate visual analysis of any number of system wealth profiles. Built several data visualization widgets using React.",
+                headerImg: weMatchStats,
+                images: [
+                ],
+                technologies: [
+                    "HTML", "CSS", "Sass/scss",  "JavaScript", "React"
+                ]
+            },
+            {
+                title: "Propensity to Give (P2G) by Category",
+                description: "Built analysis widget for WealthEngine’s proprietary P2G score, broken out by Category.",
+                images: [
+                ],
+                technologies: [
+                    "HTML", "CSS", "Sass/scss",  "JavaScript", "React"
+                ]
+            },
+            {
+                title: "WE Prospect",
+                description: "Developed a visual audience builder. The tool allows users to query and segment WealthEngine’s Data Graph into custom audiences.",
+                images: [
+                ],
+                technologies: [
+                    "HTML", "CSS", "Sass/scss",  "JavaScript"
+                ]
+            }
         ]
     },
     {
-        title: "WealthEngine Administration Suite",
-        description: "Worked on an Agile Tribe as part of the WealthEngine technology team to design and build a robust administration tab into the product. The tab featured comprehensive usage analytics, user management and several other features for team administrators. The UI was built using ReactJS, React-Router and HighCharts.", 
-        images: [
-            weAdmin1, weAdmin2, weAdmin3, weAdmin4, weAdmin5
-        ],
-        technologies: [
-            "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS", "React Router", "HighCharts"
-        ]
-    },
-    {
-        title: "Wealth Analysis Summary Tab",
-        description: "Worked with the team to design and build out a tab for aggregate visual analysis of any number of system wealth profiles. The tab features multiple data visualization widgets built using ReactJS.",
-        images: [
-            weAnalysis
-        ],
-        technologies: [
-            "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS"
-        ]
-    },
-    {
-        title: "Propensity to Give (P2G) by Category",
-        description: "Designed and built out breakdown visual analysis widget of WealthEngine’s proprietary P2G score by Category.",
-        images: [
-            weP2G
-        ],
-        technologies: [
-            "HTML", "CSS", "Sass/scss",  "JavaScript", "ReactJS"
-        ]
-    },
-    {
-        title: "WE Prospect",
-        description: "Worked with product management to design and build visual UI for the WE Prospect Audience Builder. The tool allows users to query and segment WealthEngine’s Data Graph into custom audiences.",
-        images: [
-            weProspect
-        ],
-        technologies: [
-            "HTML", "CSS", "Sass/scss",  "JavaScript", "AngularJS"
-        ]
-    },{
-        title: "Would You Rather App ",
-        description: "This project was for the Udacity ReactJS Nanodegree. The assignment was to build an app which would allow users to create “Would You Rather” questions and also to vote on them. The demo features three made-up users.",
-        link: "https://master.d2jo2yzx5ypc0r.amplifyapp.com/",
-        images: [
-            wyr1, wyr2, wyr3
-        ],
-        technologies: [
-            "HTML", "CSS", "JavaScript", "ReactJS"
+        title: "Side Projects",
+        time: "2018 - Present", 
+        description: '', 
+        projects: [{
+                title: "Centering Prayer App",
+                description: "Worked with a friend to implement his vision for an app to aid spiritual seekers in centering prayer. The app features simple background color animations and custom audio for each meditation. Each meditation presents a consistent audio format: a bell rings, a text is read, then the bell rings a second time. The user is then invited to meditate on the passage. At the end the bells and text are played again.",
+                link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
+                headerImg: tempora,
+                technologies: [
+                    "HTML", "CSS", "JavaScript", "React", "React Router", "Responsive Design"
+                ]
+            },{
+                title: "Would You Rather App ",
+                description: "This project was for the Udacity React Nanodegree. The assignment was to build an app which would allow users to create “Would You Rather” questions and also to vote on them. The demo features three made-up users.",
+                link: "https://master.d2jo2yzx5ypc0r.amplifyapp.com/",
+                images: [
+                    wyr1, wyr2, wyr3
+                ],
+                technologies: [
+                    "HTML", "CSS", "JavaScript", "React"
+                ]
+            }
         ]
     }
-
 ]
 
 export const TESTIMONIALS = [
