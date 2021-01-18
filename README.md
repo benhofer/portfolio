@@ -1,14 +1,18 @@
 
 # Simple Portfolio App 
 
-My goal was to create a very simple portfolio website in one day. Nothing flashy, just a template to display my work. 
+My goal was to create a one-page visual resume.
 
-The app includes the following technologies:
+The app is built using the following technologies:
 - ReactJS (Create-React-App)
 - Bulma CSS Framework
-- Iconify Icons 
+
+Also: 
+- Iconify Icons
+- Custom-designed graphics
 
 --
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
