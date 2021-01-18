@@ -249,7 +249,7 @@ h1.title svg {
   margin: 0 1rem 1rem 0;
 }
 
-.sub-section.reverse .columns {
+.sub-section.reverse .main-columns.columns {
   flex-direction: row-reverse;
 }
 

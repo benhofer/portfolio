@@ -3,20 +3,13 @@ import github from '@iconify/icons-foundation/social-github';
 import twitter from '@iconify/icons-foundation/social-twitter';
 import email from '@iconify/icons-mdi/email';
 import { Icon } from '@iconify/react';
-import we from './img/portfolio/we.png';
 import weAdmin from './img/portfolio/we-admin.png';
 import weMatchStats from './img/portfolio/we-match-stats.png';
-// import weAdmin1 from './img/portfolio/admin-overview.png';
-// import weAdmin2 from './img/portfolio/admin-search.png';
-// import weAdmin3 from './img/portfolio/admin-screen.png';
-// import weAdmin4 from './img/portfolio/admin-plans.png';
-// import weAdmin5 from './img/portfolio/admin-users.png';
+import weP2G from './img/portfolio/we-p2g.png';
+import weProspect from './img/portfolio/we-prospect.png';
 import tempora from './img/portfolio/tempora.png';
-import wyr1 from './img/wyr1.jpg';
-import wyr2 from './img/wyr2.jpg';
-import wyr3 from './img/wyr3.jpg';
 import kc from './img/portfolio/keycaliber.png';
-import kc2 from './img/portfolio/kc2.png';
+import kcProduct from './img/portfolio/keycaliber-product.png';
 
 export const ABOUT = {
     title: "Frontend Developer",
@@ -39,14 +32,11 @@ export const WORK = [
         title: "KeyCaliber",
         description: "I built wireframes, UI and data visualizations for this cybersecurity startup's SaaS product and public marketing website.",
         time: 'August 2020 - Present',
-        images: [
-            
-        ],
         projects: [
             {
                 title: "Marketing Website", 
                 link: "https://www.keycaliber.com",
-                description: 'Description for the KeyCaliber marketing website.', 
+                description: 'Developed wireframes and frontend code including custom interactive elements for public marketing website. Coordinated with VP of Engineering to ensure a successful deployment.', 
                 headerImg: kc, 
                 technologies: [
                     "HTML", "CSS", "JavaScript", "React", "React Router", "Responsive Design"
@@ -56,11 +46,13 @@ export const WORK = [
                 ]
             }, {
                 title: "Software-as-a-Service Product", 
-                description: 'Description for the KeyCaliber SaaS Product.', 
+                description: "Built wireframes and front-end code for a redesign of the KeyCaliber Product with Material UI and the Nivo dataviz library. Read more about the product on the public website.", 
+                link: "https://www.keycaliber.com/#/product",
                 images: null,
                 technologies: [
-                    "HTML", "CSS", "JavaScript", "React", "React Router", "Material UI", "nivo"
-                ]
+                    "HTML", "CSS", "JavaScript", "React", "React Router", "Material UI", "Nivo"
+                ],
+                headerImg: kcProduct
             }
         ]
     },
@@ -68,9 +60,7 @@ export const WORK = [
         title: "WealthEngine",
         time: 'April 2014 - June 2020',
         description: "I established, maintained and documented a UI pattern library for the WealthEngine data analytics platform. This served to organize the code and streamline frontend development by providing the team with reusable components and layouts.", 
-        images: [
-            we
-        ],
+        link: ['https://www.wealthengine.com/about', 'About WealthEngine'],
         projects: [
             {
                 title: "WE Admin",
@@ -88,17 +78,16 @@ export const WORK = [
                 title: "Wealth Analysis Summary",
                 description: "Created a dashboard for aggregate visual analysis of any number of system wealth profiles. Built several data visualization widgets using React.",
                 headerImg: weMatchStats,
-                images: [
-                ],
+                images: null,
                 technologies: [
                     "HTML", "CSS", "Sass/scss",  "JavaScript", "React"
                 ]
             },
             {
                 title: "Propensity to Give (P2G) by Category",
-                description: "Built analysis widget for WealthEngine’s proprietary P2G score, broken out by Category.",
-                images: [
-                ],
+                description: "Built analysis widget for WealthEngine’s proprietary P2G score, broken out by category.",
+                headerImg: weP2G,  
+                images: null,
                 technologies: [
                     "HTML", "CSS", "Sass/scss",  "JavaScript", "React"
                 ]
@@ -106,6 +95,7 @@ export const WORK = [
             {
                 title: "WE Prospect",
                 description: "Developed a visual audience builder. The tool allows users to query and segment WealthEngine’s Data Graph into custom audiences.",
+                headerImg: weProspect, 
                 images: [
                 ],
                 technologies: [
@@ -116,27 +106,27 @@ export const WORK = [
     },
     {
         title: "Side Projects",
-        time: "2018 - Present", 
-        description: '', 
+        time: "2020 - Present", 
         projects: [{
                 title: "Centering Prayer App",
-                description: "Worked with a friend to implement his vision for an app to aid spiritual seekers in centering prayer. The app features simple background color animations and custom audio for each meditation. Each meditation presents a consistent audio format: a bell rings, a text is read, then the bell rings a second time. The user is then invited to meditate on the passage. At the end the bells and text are played again.",
+                description: "Worked with a friend to develop a webapp which aids spiritual seekers in centering prayer. I created background color animations to transition between the pages with CSS and React-Router. Each meditation presents a consistent audio format with bells and readings, accomplished via timers and React hooks.",
                 link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
                 headerImg: tempora,
                 technologies: [
                     "HTML", "CSS", "JavaScript", "React", "React Router", "Responsive Design"
                 ]
-            },{
-                title: "Would You Rather App ",
-                description: "This project was for the Udacity React Nanodegree. The assignment was to build an app which would allow users to create “Would You Rather” questions and also to vote on them. The demo features three made-up users.",
-                link: "https://master.d2jo2yzx5ypc0r.amplifyapp.com/",
-                images: [
-                    wyr1, wyr2, wyr3
-                ],
-                technologies: [
-                    "HTML", "CSS", "JavaScript", "React"
-                ]
-            }
+            },
+            // {
+            //     title: "Would You Rather App ",
+            //     description: "This project was for the Udacity React Nanodegree. The assignment was to build an app which would allow users to create “Would You Rather” questions and also to vote on them. The demo features three made-up users.",
+            //     link: "https://master.d2jo2yzx5ypc0r.amplifyapp.com/",
+            //     images: [
+            //         wyr1, wyr2, wyr3
+            //     ],
+            //     technologies: [
+            //         "HTML", "CSS", "JavaScript", "React"
+            //     ]
+            // }
         ]
     }
 ]

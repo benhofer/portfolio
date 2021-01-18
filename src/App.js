@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, Fragment} from 'react';
 import './App.css';
 import { ABOUT, WORK, TESTIMONIALS } from './content';
 import ben from './img/lego-ben.jpg';
@@ -106,8 +106,8 @@ function App() {
                     
                     <p className="mb-2">{p.description}</p>
                       {p.link && 
-                        <a href={p.link} rel="noreferrer" target="_blank" style={{alignItems: 'center', display: 'flex'}}>
-                          View Site 
+                        <a href={p.link[0]} rel="noreferrer" target="_blank" style={{alignItems: 'center', display: 'flex'}}>
+                          {p.link[1]}
                           <Icon icon={rightArrow} width="18px" className="ml-1" /> 
                         </a>
                       }    
@@ -123,7 +123,7 @@ function App() {
                               <i>{t}</i></li>
                           )}
                         </ul>
-                        <div className="columns">
+                        <div className="columns main-columns">
                           <div className={`mb-4 px-4 column is-one-third`}>
                             <p className="mb-2">{project.description}</p>
                             {project.link && 
@@ -143,15 +143,22 @@ function App() {
                           </div>
                       </div>
                     </div>
-                    <div className="columns">
                       {
                         project.images && project.images.map((img,i) => 
-                          <div className={`column ${img[1]}`}>
-                            <img src={img[0]} alt="" />
+                          <div className="columns">
+                            <div className={`column ${img[1]}`}>
+                              <img src={img[0]} alt="" />
+                            </div>
+                            {
+                              img[2] && 
+                                <div className={`column ${img[3]}`}>
+                                  <p>{img[2]}</p>
+                                </div>
+                                
+                            }
                           </div>
                         )
                       }
-                    </div>
                     {
                       project.images && project.thumbnails && 
                       <img src={project.images[0]} alt="" />
