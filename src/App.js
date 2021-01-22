@@ -1,7 +1,7 @@
 import React, {useState, Fragment} from 'react';
 import './App.css';
 import { ABOUT, WORK, TESTIMONIALS } from './content';
-import ben from './img/lego-ben.jpg';
+import ben from './img/lego-ben.png';
 import HeroImg from './hero-img';
 import { Icon } from '@iconify/react';
 import quote from '@iconify/icons-bx/bxs-quote-alt-left';
@@ -196,7 +196,7 @@ function App() {
           { ABOUT.links.map((link,i) => <span key={'link-'+i}>{link}</span>)}
         </section>
         <div className="portrait-wrapper">
-          <img src={ben} className='portrait' alt="Portrait" />
+          <img src={ben} className='portrait' alt="Portrait" width="130px" />
         </div>
         <div className="content has-text-centered p-3">
           <p>
