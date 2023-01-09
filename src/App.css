@@ -6,6 +6,10 @@ p {
   line-height: 26px;
 }
 
+a:hover, a:focus {
+  color: rgb(0, 155, 160);
+}
+
 .section {
   padding-top: 8rem;
 }
