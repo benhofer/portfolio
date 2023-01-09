@@ -11,6 +11,8 @@ import weProspect from './img/portfolio/we-prospect.png';
 import tempora from './img/portfolio/tempora.png';
 import kc from './img/portfolio/keycaliber.png';
 import kcProduct from './img/portfolio/keycaliber-product.png';
+import riskSc from './img/portfolio/risk-screencast1080p.mov';
+import quickSearch from './img/portfolio/quick-search1080p.mov';
 
 export const ABOUT = {
     title: "Frontend Developer",
@@ -34,7 +36,6 @@ export const WORK = [
         projects: [
             {
                 title: "Marketing Website", 
-                link: "https://www.keycaliber.com",
                 description: 'Developed wireframes and frontend code including custom interactive elements for public marketing website. Coordinated with VP of Engineering to ensure a successful deployment.', 
                 headerImg: kc, 
                 technologies: [
@@ -44,14 +45,23 @@ export const WORK = [
                     // [kc2, 'is-one-third-desktop', 'description']
                 ]
             }, {
-                title: "Software-as-a-Service Product", 
-                description: "Built wireframes and front-end code for a redesign of the KeyCaliber Product with Material UI and the Nivo dataviz library. Read more about the product on the public website.", 
-                link: "https://www.keycaliber.com/#/product",
+                title: "KeyCaliber Product: Risk", 
+                description: "Built wireframes and front-end code for a redesign of the KeyCaliber Product with Material UI and the D3 data visualization library. The Risk tab featured an interactive scatterplot.", 
+                link: "",
                 images: null,
                 technologies: [
-                    "HTML", "CSS", "JavaScript", "React", "React Router", "Material UI", "Nivo"
+                    "HTML", "CSS", "JavaScript", "React", "Material UI", "D3"
                 ],
-                headerImg: kcProduct
+                headerVideo: riskSc
+            },{
+                title: "KeyCaliber Product: Search", 
+                description: "Developed concept and built out interactive autocomplete search feature that doubles as a way to navigate the website.", 
+                link: "",
+                images: null,
+                technologies: [
+                    "HTML", "CSS", "JavaScript", "React", "Material UI"
+                ],
+                headerVideo: quickSearch
             }
         ]
     },

@@ -137,8 +137,13 @@ function App() {
                             {
                               project.headerImg && 
                               <div key={"img-" + j} className="product-img-wrapper mx-4">
-                                <img src={project.headerImg} alt='' width="100%" /> 
+                                  <img src={project.headerImg} alt='' width="100%" />
                               </div>
+                            }{
+                              project.headerVideo && 
+                              <video controls muted style={{border: "1px solid silver"}}>Your browser does not support the &lt;video&gt; tag.
+                               <source src={project.headerVideo}/>
+                             </video>
                             }
                           </div>
                       </div>
