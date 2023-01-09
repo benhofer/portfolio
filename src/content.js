@@ -32,7 +32,7 @@ export const WORK = [
     {
         title: "KeyCaliber",
         description: "I built wireframes, UI and data visualizations for this cybersecurity startup's SaaS product and public marketing website.",
-        time: 'August 2020 - Present',
+        time: 'August 2020 - December 2022',
         link: ['https://www.keycaliber.com', 'About KeyCaliber'],
         projects: [
             {
