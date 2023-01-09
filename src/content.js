@@ -1,3 +1,4 @@
+import React from "react";
 import linkedin from '@iconify/icons-foundation/social-linkedin';
 import github from '@iconify/icons-foundation/social-github';
 import twitter from '@iconify/icons-foundation/social-twitter';
@@ -15,15 +16,15 @@ export const ABOUT = {
     title: "Frontend Developer",
     subtitle: "Specializing in React",
     text: <div><p>
-        I’ve been at it for over 10 years, creating user interfaces for government clients at <a href="https://www.publicissapient.com/industries/public-sector" rel="noreferrer" target="_blank">Sapient</a> and in the private sector for <a href="https://www.wealthengine.com" rel="noreferrer" target="_blank">WealthEngine</a> and <a href="https://www.keycaliber.com" rel="noreferrer" target="_blank">KeyCaliber</a>.</p>        
-        <p>When I’m not coding, I love running, <a href="https://benhofer.bandcamp.com" rel="noreferrer" target="_blank">making music</a>, and playing legos with my kids on our dining room table.</p>
+        I’ve been at it for over 10 years, creating user interfaces for government clients at <a href="https://www.publicissapient.com/industries/public-sector" rel="noopener noreferrer" target="_blank">Sapient</a> and in the private sector for <a href="https://www.wealthengine.com" rel="noreferrer noopener" target="_blank">WealthEngine</a> and <a href="https://www.keycaliber.com" rel="noreferrer noopener" target="_blank">KeyCaliber</a>.</p>        
+        <p>When I’m not coding, I love running, <a href="https://benhofer.bandcamp.com" rel="noreferrer noopener" target="_blank">making music</a>, and playing legos with my kids on our dining room table.</p>
     </div>,
   links: [
-    <a href="http://github.com/benhofer" rel="noreferrer" target="_blank"><Icon icon={github} width="32px" /> <span className="is-sr-only">Github</span></a>,
-    <a href="https://www.linkedin.com/in/benhofer/" rel="noreferrer" target="_blank"><Icon icon={linkedin} width="32px" /> <span className="is-sr-only">LinkedIn</span></a>,
-    <a href="http://twitter.com/benhofer" rel="noreferrer" target="_blank">
+    <a href="http://github.com/benhofer" rel="noreferrer noopener" target="_blank"><Icon icon={github} width="32px" /> <span className="is-sr-only">Github</span></a>,
+    <a href="https://www.linkedin.com/in/benhofer/" rel="noreferrer noopener" target="_blank"><Icon icon={linkedin} width="32px" /> <span className="is-sr-only">LinkedIn</span></a>,
+    <a href="http://twitter.com/benhofer" rel="noreferrer noopener" target="_blank">
         <Icon icon={twitter} width="32px" /> <span className="is-sr-only">Twitter</span></a>,
-    <a href="mailto:ben dot hofer at gmail dot com" rel="noreferrer" target="_blank"><Icon icon={email} width="32px" /><span className="is-sr-only">Email</span></a>,
+    <a href="mailto:ben dot hofer at gmail dot com" rel="noreferrer noopener" target="_blank"><Icon icon={email} width="32px" /><span className="is-sr-only">Email</span></a>,
   ]
 }
 

@@ -1,4 +1,4 @@
-import React, {useState, Fragment} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import { ABOUT, WORK, TESTIMONIALS } from './content';
 import ben from './img/lego-ben.png';
@@ -28,7 +28,7 @@ function App() {
                   Ben Hofer
                 </a>
               </h1>
-              <div role="button" className={"navbar-burger" + " " + (menu && 'is-active')} onClick={handleSetMenu} aria-label="menu" aria-expanded={menu}>
+              <div role="button" className={`navbar-burger ${(menu && 'is-active')}`} onClick={handleSetMenu} aria-label="menu" aria-expanded={menu}>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -106,7 +106,7 @@ function App() {
                     
                     <p className="mb-2">{p.description}</p>
                       {p.link && 
-                        <a href={p.link[0]} rel="noreferrer" target="_blank" style={{alignItems: 'center', display: 'flex'}}>
+                        <a href={p.link[0]} rel="noreferrer noopener" target="_blank" style={{alignItems: 'center', display: 'flex'}}>
                           {p.link[1]}
                           <Icon icon={rightArrow} width="18px" className="ml-1" /> 
                         </a>
@@ -127,7 +127,7 @@ function App() {
                           <div className={`mb-4 px-4 column is-one-third`}>
                             <p className="mb-2">{project.description}</p>
                             {project.link && 
-                              <a href={project.link} rel="noreferrer" target="_blank" style={{alignItems: 'center', display: 'flex'}}>
+                              <a href={project.link} rel="noreferrer noopener" target="_blank" style={{alignItems: 'center', display: 'flex'}}>
                                 View Site 
                                 <Icon icon={rightArrow} width="18px" className="ml-1" /> 
                               </a>
@@ -173,7 +173,7 @@ function App() {
 
           <section className="section" id="testimonials">
             <h1 className="title has-text-centered">Testimonials</h1>
-            <p>Here are some kind words from my colleagues. Find more on my <a href="https://www.linkedin.com/in/benhofer/" rel="noreferrer" target="_blank">LinkedIn profile</a>.</p>
+            <p>Here are some kind words from my colleagues. Find more on my <a href="https://www.linkedin.com/in/benhofer/" rel="noreferrer noopener" target="_blank">LinkedIn profile</a>.</p>
             <div className="columns" style={{flexWrap: 'wrap'}}>
               {
                 TESTIMONIALS.map((t,i) => 
