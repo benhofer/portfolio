@@ -137,11 +137,12 @@ function App() {
                             {
                               project.headerImg && 
                               <div key={"img-" + j} className="product-img-wrapper mx-4">
-                                  <img src={project.headerImg} alt='' width="100%" />
+                                  <img src={project.headerImg} className={project.headerImgBorder ? "product-img" : ""} alt='' width="100%" />
                               </div>
                             }{
                               project.headerVideo && 
-                              <video controls muted style={{border: "1px solid silver"}}>Your browser does not support the &lt;video&gt; tag.
+                              <video controls muted style={{border: "1px solid silver"}} poster={project.headerVideoPoster ? project.headerVideoPoster : ""}>
+                                Your browser does not support the &lt;video&gt; tag.
                                <source src={project.headerVideo}/>
                              </video>
                             }
@@ -205,7 +206,7 @@ function App() {
         </div>
         <div className="content has-text-centered p-3">
           <p>
-            &copy; Copyright 2021 Ben Hofer
+            &copy; Copyright 2023 Ben Hofer
           </p>
         </div>
       </footer>     

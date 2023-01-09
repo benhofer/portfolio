@@ -1,7 +1,6 @@
 import React from "react";
 import linkedin from '@iconify/icons-foundation/social-linkedin';
 import github from '@iconify/icons-foundation/social-github';
-import twitter from '@iconify/icons-foundation/social-twitter';
 import email from '@iconify/icons-mdi/email';
 import { Icon } from '@iconify/react';
 import weAdmin from './img/portfolio/we-admin.png';
@@ -10,9 +9,10 @@ import weP2G from './img/portfolio/we-p2g.png';
 import weProspect from './img/portfolio/we-prospect.png';
 import tempora from './img/portfolio/tempora.png';
 import kc from './img/portfolio/keycaliber.png';
-import kcProduct from './img/portfolio/keycaliber-product.png';
 import riskSc from './img/portfolio/risk-screencast1080p.mov';
 import quickSearch from './img/portfolio/quick-search1080p.mov';
+import quickSearchPoster from './img/portfolio/search-ph.png';
+import inventory from './img/portfolio/inventory.png';
 
 export const ABOUT = {
     title: "Frontend Developer",
@@ -33,6 +33,7 @@ export const WORK = [
         title: "KeyCaliber",
         description: "I built wireframes, UI and data visualizations for this cybersecurity startup's SaaS product and public marketing website.",
         time: 'August 2020 - Present',
+        link: ['https://www.keycaliber.com', 'About KeyCaliber'],
         projects: [
             {
                 title: "Marketing Website", 
@@ -54,6 +55,16 @@ export const WORK = [
                 ],
                 headerVideo: riskSc
             },{
+                title: "KeyCaliber Product: Inventory", 
+                description: "Developed a UI for filtering and sorting a paginated table of assets.", 
+                link: "",
+                images: null,
+                technologies: [
+                    "HTML", "CSS", "JavaScript", "React", "Material UI"
+                ],
+                headerImg: inventory,
+                headerImgBorder: true
+            },{
                 title: "KeyCaliber Product: Search", 
                 description: "Developed concept and built out interactive autocomplete search feature that doubles as a way to navigate the website.", 
                 link: "",
@@ -61,7 +72,8 @@ export const WORK = [
                 technologies: [
                     "HTML", "CSS", "JavaScript", "React", "Material UI"
                 ],
-                headerVideo: quickSearch
+                headerVideo: quickSearch,
+                headerVideoPoster: quickSearchPoster
             }
         ]
     },
@@ -103,7 +115,7 @@ export const WORK = [
             },
             {
                 title: "WE Prospect",
-                description: "Developed a visual audience builder. The tool allows users to query and segment WealthEngine’s Data Graph into custom audiences.",
+                description: "Contributed to development of a visual audience builder. The tool allows users to query and segment WealthEngine’s Data Graph into custom audiences.",
                 headerImg: weProspect, 
                 images: [
                 ],
@@ -113,18 +125,18 @@ export const WORK = [
             }
         ]
     },
-    {
-        title: "Side Projects",
-        time: "2020 - Present", 
-        projects: [{
-                title: "Centering Prayer App",
-                description: "Worked with a friend to develop a webapp which aids spiritual seekers in centering prayer. I created background color animations to transition between the pages with CSS and React-Router. Each meditation presents a consistent audio format with bells and readings, accomplished via timers and React hooks.",
-                link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
-                headerImg: tempora,
-                technologies: [
-                    "HTML", "CSS", "JavaScript", "React", "React Router", "Responsive Design"
-                ]
-            },
+    // {
+    //     title: "Side Projects",
+    //     time: "2020 - Present", 
+    //     projects: [{
+    //             title: "Centering Prayer App",
+    //             description: "Worked with a friend to develop a webapp which aids spiritual seekers in centering prayer. I created background color animations to transition between the pages with CSS and React-Router. Each meditation presents a consistent audio format with bells and readings, accomplished via timers and React hooks.",
+    //             link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
+    //             headerImg: tempora,
+    //             technologies: [
+    //                 "HTML", "CSS", "JavaScript", "React", "React Router", "Responsive Design"
+    //             ]
+    //         },
             // {
             //     title: "Would You Rather App ",
             //     description: "This project was for the Udacity React Nanodegree. The assignment was to build an app which would allow users to create “Would You Rather” questions and also to vote on them. The demo features three made-up users.",
@@ -136,8 +148,8 @@ export const WORK = [
             //         "HTML", "CSS", "JavaScript", "React"
             //     ]
             // }
-        ]
-    }
+        // ]
+    // }
 ]
 
 export const TESTIMONIALS = [
