@@ -9,9 +9,9 @@ import weP2G from './img/portfolio/we-p2g.png';
 import weProspect from './img/portfolio/we-prospect.png';
 // import tempora from './img/portfolio/tempora.png';
 import kc from './img/portfolio/keycaliber.png';
-import quickSearchPoster from './img/portfolio/search-ph.png';
+import quickSearchPoster from './img/portfolio/quick-search.gif';
 import inventory from './img/portfolio/inventory.png';
-import riskImg from './img/portfolio/risk.png';
+import riskImg from './img/portfolio/risk-sc.gif';
 
 export const ABOUT = {
     title: "Frontend Developer",
@@ -52,7 +52,8 @@ export const WORK = [
                 technologies: [
                     "HTML", "CSS", "JavaScript", "React", "Material UI", "D3"
                 ],
-                headerImg: riskImg
+                headerImg: riskImg,
+                headerImgBorder: true,
             },{
                 title: "KeyCaliber Product: Inventory", 
                 description: "Developed a UI for filtering and sorting a paginated table of assets.", 
@@ -71,7 +72,8 @@ export const WORK = [
                 technologies: [
                     "HTML", "CSS", "JavaScript", "React", "Material UI"
                 ],
-                headerImg: quickSearchPoster
+                headerImg: quickSearchPoster,
+                headerImgBorder: true,
             }
         ]
     },
