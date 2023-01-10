@@ -11,6 +11,8 @@ Also:
 - Iconify Icons
 - Custom-designed graphics
 
+Used EZGif.com to generate animated gifs in the portfolio.
+
 # Bootstrapped Using Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
