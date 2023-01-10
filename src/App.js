@@ -86,7 +86,7 @@ function App() {
             <h1 className="title has-text-centered">Portfolio</h1>
             {
               WORK.map((p,i) => 
-                <div>
+                <div key={'work-'+i}>
                   <div className={`${i%2 ? 'reverse' : ''} sub-section category-header`} key={'work-' + i}>
                     <h2 className="is-size-2 mb-2">
                       {p.title} &nbsp;
@@ -113,7 +113,7 @@ function App() {
                       }    
                   </div>                
                   { p.projects && p.projects.map((project,j) => 
-                    <div className={`${j%2 ? 'reverse' : ''} sub-section`} key={'project-' + i}>
+                    <div className={`${j%2 ? 'reverse' : ''} sub-section`} key={'work-'+i+'project-'+j}>
                       <div className="project-header">
                         <h3 className="is-size-4">{project.title}</h3>
                         <ul className="technologies pb-5">
@@ -150,8 +150,8 @@ function App() {
                       </div>
                     </div>
                       {
-                        project.images && project.images.map((img,i) => 
-                          <div className="columns">
+                        project.images && project.images.map((img,k) => 
+                          <div className="columns" key={'work-'+i+'project-'+j+'img-'+k}>
                             <div className={`column ${img[1]}`}>
                               <img src={img[0]} alt="" />
                             </div>
