@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function HeroImg() {
   return (
@@ -10,7 +10,7 @@ export default function HeroImg() {
         x="0px"
         y="0px"
         viewBox="0 0 673 465"
-        style={{ enableBackground: "new 0 0 673 465" }}
+        style={{ enableBackground: 'new 0 0 673 465' }}
         preserveAspectRatio="none"
       >
         <g>
