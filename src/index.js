@@ -1,4 +1,3 @@
-/* global document */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bulma/css/bulma.css';
