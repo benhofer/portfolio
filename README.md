@@ -1,13 +1,14 @@
-
-# Simple Portfolio App 
+# Simple Portfolio App
 
 My goal was to create a one-page visual resume.
 
 The app is built using the following technologies:
+
 - ReactJS (Create-React-App)
 - Bulma CSS Framework
 
-Also: 
+Also:
+
 - Iconify Icons
 - Custom-designed graphics
 
