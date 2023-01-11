@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import "./App.css";
-import { ABOUT, WORK, TESTIMONIALS } from "./content";
-import ben from "./img/lego-ben.png";
-import HeroImg from "./hero-img";
-import { Icon } from "@iconify/react";
-import quote from "@iconify/icons-bx/bxs-quote-alt-left";
-import check from "@iconify/icons-mdi/check";
-import downArrow from "@iconify/icons-mdi/arrow-down-drop-circle";
-import rightArrow from "@iconify/icons-mdi/arrow-right-drop-circle";
+import React, { useState } from 'react';
+import './App.css';
+import { Icon } from '@iconify/react';
+import quote from '@iconify/icons-bx/bxs-quote-alt-left';
+import check from '@iconify/icons-mdi/check';
+import downArrow from '@iconify/icons-mdi/arrow-down-drop-circle';
+import rightArrow from '@iconify/icons-mdi/arrow-right-drop-circle';
+import HeroImg from './hero-img';
+import ben from './img/lego-ben.png';
+import { ABOUT, WORK, TESTIMONIALS } from './content';
 
 function App() {
   const [menu, setMenu] = useState(false);
 
   const handleSetMenu = () => {
-    let m = menu;
+    const m = menu;
     setMenu(!m);
   };
 
@@ -32,21 +32,21 @@ function App() {
                   Ben Hofer
                 </a>
               </h1>
-              <div
-                role="button"
-                className={`navbar-burger ${menu && "is-active"}`}
+              <button
+                type="button"
+                className={`navbar-burger ${menu && 'is-active'}`}
                 onClick={handleSetMenu}
                 aria-label="menu"
                 aria-expanded={menu}
               >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </div>
+                <span aria-hidden="true" />
+                <span aria-hidden="true" />
+                <span aria-hidden="true" />
+              </button>
             </div>
             <div
               id="navbarBasicExample"
-              className={"navbar-menu " + (menu && "is-active")}
+              className={`navbar-menu ${menu && 'is-active'}`}
             >
               <div className="navbar-end">
                 <a
@@ -77,7 +77,7 @@ function App() {
 
         <section className="section" id="about-me">
           <div className="hero">
-            <div className="hero-bg"></div>
+            <div className="hero-bg" />
             <div className="hero-body p-6">
               <div className="container px-5 pt-6">
                 <div className="columns">
@@ -88,8 +88,8 @@ function App() {
                     </div>
                     <div className="about-text mb-5">{ABOUT.text}</div>
                     <section className="links">
-                      {ABOUT.links.map((link, i) => (
-                        <span key={"link-" + i}>{link}</span>
+                      {ABOUT.links.map((link) => (
+                        <span key={`link-${link.id}`}>{link.link}</span>
                       ))}
                     </section>
                   </div>
@@ -111,20 +111,19 @@ function App() {
         <div className="container">
           <section className="section" id="portfolio">
             <h1 className="title has-text-centered">Portfolio</h1>
-            {WORK.map((p, i) => (
-              <div key={"work-" + i}>
+            {WORK.map((work, i) => (
+              <div key={`work-${work.id}`}>
                 <div
                   className={`${
-                    i % 2 ? "reverse" : ""
+                    i % 2 ? 'reverse' : ''
                   } sub-section category-header`}
-                  key={"work-" + i}
                 >
-                  <h2 className="is-size-2 mb-2">{p.title} &nbsp;</h2>
-                  <div className="subtitle time">{p.time}</div>
-                  {p.technologies && (
+                  <h2 className="is-size-2 mb-2">{work.title} &nbsp;</h2>
+                  <div className="subtitle time">{work.time}</div>
+                  {work.technologies && (
                     <ul className="technologies">
-                      {p.technologies.map((t, j) => (
-                        <li key={"tech-" + j}>
+                      {work.technologies.map((t) => (
+                        <li key={`tech-${t}`}>
                           <Icon icon={check} width="24px" />
                           <i>{t}</i>
                         </li>
@@ -132,37 +131,37 @@ function App() {
                     </ul>
                   )}
 
-                  <p className="mb-2">{p.description}</p>
-                  {p.link && (
+                  <p className="mb-2">{work.description}</p>
+                  {work.link && (
                     <a
-                      href={p.link[0]}
+                      href={work.link[0]}
                       rel="noreferrer noopener"
                       target="_blank"
-                      style={{ alignItems: "center", display: "flex" }}
+                      style={{ alignItems: 'center', display: 'flex' }}
                     >
-                      {p.link[1]}
+                      {work.link[1]}
                       <Icon icon={rightArrow} width="18px" className="ml-1" />
                     </a>
                   )}
                 </div>
-                {p.projects &&
-                  p.projects.map((project, j) => (
+                {work.projects &&
+                  work.projects.map((project, j) => (
                     <div
-                      className={`${j % 2 ? "reverse" : ""} sub-section`}
-                      key={"work-" + i + "project-" + j}
+                      className={`${j % 2 ? 'reverse' : ''} sub-section`}
+                      key={`work-${work.id}-project-${project.id}`}
                     >
                       <div className="project-header">
                         <h3 className="is-size-4">{project.title}</h3>
                         <ul className="technologies pb-5">
-                          {project.technologies.map((t, j) => (
-                            <li key={"tech-" + j}>
+                          {project.technologies.map((t) => (
+                            <li key={`tech-${t}`}>
                               <Icon icon={check} width="24px" />
                               <i>{t}</i>
                             </li>
                           ))}
                         </ul>
                         <div className="columns main-columns">
-                          <div className={`mb-4 px-4 column is-one-third`}>
+                          <div className="mb-4 px-4 column is-one-third">
                             <p className="mb-2">{project.description}</p>
                             {project.link && (
                               <a
@@ -170,8 +169,8 @@ function App() {
                                 rel="noreferrer noopener"
                                 target="_blank"
                                 style={{
-                                  alignItems: "center",
-                                  display: "flex",
+                                  alignItems: 'center',
+                                  display: 'flex',
                                 }}
                               >
                                 View Site
@@ -186,13 +185,13 @@ function App() {
                           <div className="column is-two-thirds">
                             {project.headerImg && (
                               <div
-                                key={"img-" + j}
+                                key={`img-${project.id}`}
                                 className="product-img-wrapper mx-4"
                               >
                                 <img
                                   src={project.headerImg}
                                   className={
-                                    project.headerImgBorder ? "product-img" : ""
+                                    project.headerImgBorder ? 'product-img' : ''
                                   }
                                   alt=""
                                   width="100%"
@@ -203,11 +202,11 @@ function App() {
                               <video
                                 controls
                                 muted
-                                style={{ border: "1px solid silver" }}
+                                style={{ border: '1px solid silver' }}
                                 poster={
                                   project.headerVideoPoster
                                     ? project.headerVideoPoster
-                                    : ""
+                                    : ''
                                 }
                               >
                                 Your browser does not support the &lt;video&gt;
@@ -219,10 +218,10 @@ function App() {
                         </div>
                       </div>
                       {project.images &&
-                        project.images.map((img, k) => (
+                        project.images.map((img) => (
                           <div
                             className="columns"
-                            key={"work-" + i + "project-" + j + "img-" + k}
+                            key={`work-${work.id}-project-${project.id}img-${img.id}`}
                           >
                             <div className={`column ${img[1]}`}>
                               <img src={img[0]} alt="" />
@@ -246,7 +245,7 @@ function App() {
           <section className="section" id="testimonials">
             <h1 className="title has-text-centered">Testimonials</h1>
             <p>
-              Here are some kind words from my colleagues. Find more on my{" "}
+              Here are some kind words from my colleagues. Find more on my{' '}
               <a
                 href="https://www.linkedin.com/in/benhofer/"
                 rel="noreferrer noopener"
@@ -256,18 +255,18 @@ function App() {
               </a>
               .
             </p>
-            <div className="columns" style={{ flexWrap: "wrap" }}>
-              {TESTIMONIALS.map((t, i) => (
+            <div className="columns" style={{ flexWrap: 'wrap' }}>
+              {TESTIMONIALS.map((t) => (
                 <div
-                  key={"testimonial-" + i}
-                  style={{ minWidth: "45%" }}
+                  key={`testimonial-${t.id}`}
+                  style={{ minWidth: '45%' }}
                   className="column mx-5 sub-section mb-6"
                 >
-                  <Icon icon={quote} width="62px" style={{ color: "gray" }} />
+                  <Icon icon={quote} width="62px" style={{ color: 'gray' }} />
                   <h2 className="is-size-5">{t.text}</h2>
                   <p>
                     <strong>
-                      {t.colleague}, {t.title}, {t.organization}
+                      {t.colleague},{t.title},{t.organization}
                     </strong>
                   </p>
                 </div>
@@ -278,8 +277,8 @@ function App() {
       </div>
       <footer className="footer">
         <section className="links container p-6">
-          {ABOUT.links.map((link, i) => (
-            <span key={"link-" + i}>{link}</span>
+          {ABOUT.links.map((link) => (
+            <span key={`link-${link.id}`}>{link.link}</span>
           ))}
         </section>
         <div className="portrait-wrapper">

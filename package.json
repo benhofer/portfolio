@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@iconify/icons-bi": "^1.1.0",
+    "@iconify/icons-bx": "^1.1.0",
+    "@iconify/icons-foundation": "^1.1.0",
+    "@iconify/icons-mdi": "^1.1.2",
+    "@iconify/icons-mdi-light": "^1.1.0",
+    "@iconify/react": "^2.0.0-rc.4",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -37,12 +43,16 @@
     ]
   },
   "devDependencies": {
-    "@iconify/icons-bi": "^1.1.0",
-    "@iconify/icons-bx": "^1.1.0",
-    "@iconify/icons-foundation": "^1.1.0",
-    "@iconify/icons-mdi": "^1.1.2",
-    "@iconify/icons-mdi-light": "^1.1.0",
-    "@iconify/react": "^2.0.0-rc.4",
-    "prettier": "2.8.2"
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.7.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.2"
   }
 }

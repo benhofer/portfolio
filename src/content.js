@@ -1,42 +1,42 @@
-import React from "react";
-import linkedin from "@iconify/icons-foundation/social-linkedin";
-import github from "@iconify/icons-foundation/social-github";
-import email from "@iconify/icons-mdi/email";
-import { Icon } from "@iconify/react";
-import weAdmin from "./img/portfolio/we-admin.png";
-import weMatchStats from "./img/portfolio/we-match-stats.png";
-import weP2G from "./img/portfolio/we-p2g.png";
-import weProspect from "./img/portfolio/we-prospect.png";
+import React from 'react';
+import linkedin from '@iconify/icons-foundation/social-linkedin';
+import github from '@iconify/icons-foundation/social-github';
+import email from '@iconify/icons-mdi/email';
+import { Icon } from '@iconify/react';
+import weAdmin from './img/portfolio/we-admin.png';
+import weMatchStats from './img/portfolio/we-match-stats.png';
+import weP2G from './img/portfolio/we-p2g.png';
+import weProspect from './img/portfolio/we-prospect.png';
 // import tempora from './img/portfolio/tempora.png';
-import kc from "./img/portfolio/keycaliber.png";
-import quickSearchPoster from "./img/portfolio/quick-search.gif";
-import inventory from "./img/portfolio/inventory.png";
-import riskImg from "./img/portfolio/risk-sc.gif";
+import kc from './img/portfolio/keycaliber.png';
+import quickSearchPoster from './img/portfolio/quick-search.gif';
+import inventory from './img/portfolio/inventory.png';
+import riskImg from './img/portfolio/risk-sc.gif';
 
 export const ABOUT = {
-  title: "Frontend Developer",
-  subtitle: "In Washington DC",
+  title: 'Frontend Developer',
+  subtitle: 'In Washington DC',
   text: (
     <div>
       <p>
         I’ve been at it for over 10 years, creating user interfaces for
-        government clients at{" "}
+        government clients at{' '}
         <a
           href="https://www.publicissapient.com/industries/public-sector"
           rel="noopener noreferrer"
           target="_blank"
         >
           Sapient
-        </a>{" "}
-        and in the private sector for{" "}
+        </a>{' '}
+        and in the private sector for{' '}
         <a
           href="https://www.wealthengine.com"
           rel="noreferrer noopener"
           target="_blank"
         >
           WealthEngine
-        </a>{" "}
-        and{" "}
+        </a>{' '}
+        and{' '}
         <a
           href="https://www.keycaliber.com"
           rel="noreferrer noopener"
@@ -47,7 +47,7 @@ export const ABOUT = {
         .
       </p>
       <p>
-        When I’m not coding, I love running,{" "}
+        When I’m not coding, I love running,{' '}
         <a
           href="https://benhofer.bandcamp.com"
           rel="noreferrer noopener"
@@ -60,146 +60,171 @@ export const ABOUT = {
     </div>
   ),
   links: [
-    <a
-      href="http://github.com/benhofer"
-      rel="noreferrer noopener"
-      target="_blank"
-    >
-      <Icon icon={github} width="32px" />{" "}
-      <span className="is-sr-only">Github</span>
-    </a>,
-    <a
-      href="https://www.linkedin.com/in/benhofer/"
-      rel="noreferrer noopener"
-      target="_blank"
-    >
-      <Icon icon={linkedin} width="32px" />{" "}
-      <span className="is-sr-only">LinkedIn</span>
-    </a>,
-    <a
-      href="mailto:ben dot hofer at gmail dot com"
-      rel="noreferrer noopener"
-      target="_blank"
-    >
-      <Icon icon={email} width="32px" />
-      <span className="is-sr-only">Email</span>
-    </a>,
+    {
+      id: 0,
+      link: (
+        <a
+          href="http://github.com/benhofer"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <Icon icon={github} width="32px" />{' '}
+          <span className="is-sr-only">Github</span>
+        </a>
+      ),
+    },
+    {
+      id: 1,
+      link: (
+        <a
+          href="https://www.linkedin.com/in/benhofer/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <Icon icon={linkedin} width="32px" />{' '}
+          <span className="is-sr-only">LinkedIn</span>
+        </a>
+      ),
+    },
+    {
+      id: 2,
+      link: (
+        <a
+          href="mailto:ben dot hofer at gmail dot com"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <Icon icon={email} width="32px" />
+          <span className="is-sr-only">Email</span>
+        </a>
+      ),
+    },
   ],
 };
 
 export const WORK = [
   {
-    title: "KeyCaliber",
+    title: 'KeyCaliber',
+    id: 0,
     description:
       "I built wireframes, UI and data visualizations for this cybersecurity startup's SaaS product and public marketing website.",
-    time: "August 2020 - December 2022",
-    link: ["https://www.keycaliber.com", "About KeyCaliber"],
+    time: 'August 2020 - December 2022',
+    link: ['https://www.keycaliber.com', 'About KeyCaliber'],
     projects: [
       {
-        title: "Marketing Website",
+        title: 'Marketing Website',
+        id: 0,
         description:
-          "Developed wireframes and frontend code including custom interactive elements for public marketing website. Coordinated with VP of Engineering to ensure a successful deployment.",
+          'Developed wireframes and frontend code including custom interactive elements for public marketing website. Coordinated with VP of Engineering to ensure a successful deployment.',
         headerImg: kc,
         technologies: [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "React",
-          "React Router",
-          "Responsive Design",
+          'HTML',
+          'CSS',
+          'JavaScript',
+          'React',
+          'React Router',
+          'Responsive Design',
         ],
         images: [
           // [kc2, 'is-one-third-desktop', 'description']
         ],
       },
       {
-        title: "KeyCaliber Product: Risk",
+        title: 'KeyCaliber Product: Risk',
+        id: 1,
         description:
-          "Built wireframes and front-end code for a redesign of the KeyCaliber Product with Material UI and the D3 data visualization library. The Risk tab featured an interactive scatterplot.",
-        link: "",
+          'Built wireframes and front-end code for a redesign of the KeyCaliber Product with Material UI and the D3 data visualization library. The Risk tab featured an interactive scatterplot.',
+        link: '',
         images: null,
         technologies: [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "React",
-          "Material UI",
-          "D3",
+          'HTML',
+          'CSS',
+          'JavaScript',
+          'React',
+          'Material UI',
+          'D3',
         ],
         headerImg: riskImg,
         headerImgBorder: true,
       },
       {
-        title: "KeyCaliber Product: Inventory",
+        title: 'KeyCaliber Product: Inventory',
+        id: 2,
         description:
-          "Developed a UI for filtering and sorting a paginated table of assets.",
-        link: "",
+          'Developed a UI for filtering and sorting a paginated table of assets.',
+        link: '',
         images: null,
-        technologies: ["HTML", "CSS", "JavaScript", "React", "Material UI"],
+        technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Material UI'],
         headerImg: inventory,
         headerImgBorder: true,
       },
       {
-        title: "KeyCaliber Product: Search",
+        title: 'KeyCaliber Product: Search',
+        id: 3,
         description:
-          "Developed concept and built out interactive autocomplete search feature that doubles as a way to navigate the website.",
-        link: "",
+          'Developed concept and built out interactive autocomplete search feature that doubles as a way to navigate the website.',
+        link: '',
         images: null,
-        technologies: ["HTML", "CSS", "JavaScript", "React", "Material UI"],
+        technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Material UI'],
         headerImg: quickSearchPoster,
         headerImgBorder: true,
       },
     ],
   },
   {
-    title: "WealthEngine",
-    time: "April 2014 - June 2020",
+    title: 'WealthEngine',
+    id: 1,
+    time: 'April 2014 - June 2020',
     description:
-      "I established, maintained and documented a UI pattern library for the WealthEngine data analytics platform. This served to organize the code and streamline frontend development by providing the team with reusable components and layouts.",
-    link: ["https://www.wealthengine.com/about", "About WealthEngine"],
+      'I established, maintained and documented a UI pattern library for the WealthEngine data analytics platform. This served to organize the code and streamline frontend development by providing the team with reusable components and layouts.',
+    link: ['https://www.wealthengine.com/about', 'About WealthEngine'],
     projects: [
       {
-        title: "WE Admin",
+        title: 'WE Admin',
+        id: 0,
         description:
-          "Built administration prototype using React. The tool provides comprehensive usage analytics, user management and several other features for team administrators. Coordinated with technology team and product management to ensure a successful handoff.",
+          'Built administration prototype using React. The tool provides comprehensive usage analytics, user management and several other features for team administrators. Coordinated with technology team and product management to ensure a successful handoff.',
         headerImg: weAdmin,
         thumbnails: true,
         images: [
           // [weAdmin1], [weAdmin2], [weAdmin3], [weAdmin4], [weAdmin5]
         ],
         technologies: [
-          "HTML",
-          "CSS",
-          "Sass/scss",
-          "JavaScript",
-          "React",
-          "React Router",
-          "HighCharts",
+          'HTML',
+          'CSS',
+          'Sass/scss',
+          'JavaScript',
+          'React',
+          'React Router',
+          'HighCharts',
         ],
       },
       {
-        title: "Wealth Analysis Summary",
+        title: 'Wealth Analysis Summary',
+        id: 1,
         description:
-          "Created a dashboard for aggregate visual analysis of any number of system wealth profiles. Built several data visualization widgets using React.",
+          'Created a dashboard for aggregate visual analysis of any number of system wealth profiles. Built several data visualization widgets using React.',
         headerImg: weMatchStats,
         images: null,
-        technologies: ["HTML", "CSS", "Sass/scss", "JavaScript", "React"],
+        technologies: ['HTML', 'CSS', 'Sass/scss', 'JavaScript', 'React'],
       },
       {
-        title: "Propensity to Give (P2G) by Category",
+        title: 'Propensity to Give (P2G) by Category',
+        id: 2,
         description:
-          "Built analysis widget for WealthEngine’s proprietary P2G score, broken out by category.",
+          'Built analysis widget for WealthEngine’s proprietary P2G score, broken out by category.',
         headerImg: weP2G,
         images: null,
-        technologies: ["HTML", "CSS", "Sass/scss", "JavaScript", "React"],
+        technologies: ['HTML', 'CSS', 'Sass/scss', 'JavaScript', 'React'],
       },
       {
-        title: "WE Prospect",
+        title: 'WE Prospect',
+        id: 3,
         description:
-          "Contributed to development of a visual audience builder. The tool allows users to query and segment WealthEngine’s Data Graph into custom audiences.",
+          'Contributed to development of a visual audience builder. The tool allows users to query and segment WealthEngine’s Data Graph into custom audiences.',
         headerImg: weProspect,
         images: [],
-        technologies: ["HTML", "CSS", "Sass/scss", "JavaScript"],
+        technologies: ['HTML', 'CSS', 'Sass/scss', 'JavaScript'],
       },
     ],
   },
@@ -232,6 +257,7 @@ export const WORK = [
 
 export const TESTIMONIALS = [
   {
+    id: 0,
     text: (
       <div>
         <p>
@@ -254,11 +280,12 @@ export const TESTIMONIALS = [
         </p>
       </div>
     ),
-    colleague: "Samir Damle",
-    organization: "WealthEngine",
-    title: "Senior Director of User Experience Design",
+    colleague: 'Samir Damle',
+    organization: 'WealthEngine',
+    title: 'Senior Director of User Experience Design',
   },
   {
+    id: 1,
     text: (
       <div>
         <p>
@@ -274,18 +301,19 @@ export const TESTIMONIALS = [
         </p>
       </div>
     ),
-    colleague: "Zara Schiavo-Campo",
-    organization: "WealthEngine",
-    title: "Senior Data Services Analyst",
+    colleague: 'Zara Schiavo-Campo',
+    organization: 'WealthEngine',
+    title: 'Senior Data Services Analyst',
   },
   {
+    id: 2,
     text: (
       <div>
         <p>
           I worked with Ben in WealthEngine where he was responsible for
           designing the UX/UI components for my team. Ben is not only a very
           passionate and enthusiastic UX designer but also a hardworking and
-          dedicated UI engineer. He always looks at UI from the users'
+          dedicated UI engineer. He always looks at UI from the users&apos
           perspective and his suggestions for UI layouts are fresh and creative.
           His quick-learning capabilities are great add-ons. On the personal
           front, he is very friendly to work with. I would highly recommend him
@@ -293,11 +321,12 @@ export const TESTIMONIALS = [
         </p>
       </div>
     ),
-    colleague: "Ullash Nandan",
-    organization: "WealthEngine",
-    title: "Software Development Manager",
+    colleague: 'Ullash Nandan',
+    organization: 'WealthEngine',
+    title: 'Software Development Manager',
   },
   {
+    id: 3,
     text: (
       <div>
         <p>
@@ -309,8 +338,8 @@ export const TESTIMONIALS = [
         </p>
       </div>
     ),
-    colleague: "Alex Poulos",
-    organization: "The Washington Post",
-    title: "Full Stack Engineer",
+    colleague: 'Alex Poulos',
+    organization: 'The Washington Post',
+    title: 'Full Stack Engineer',
   },
 ];
