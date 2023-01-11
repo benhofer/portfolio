@@ -1,12 +1,13 @@
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 p {
   line-height: 26px;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: rgb(0, 155, 160);
 }
 
@@ -44,7 +45,7 @@ h1.title svg {
 .project-header {
   padding-bottom: 9rem;
   margin-bottom: 3rem;
-  background: url('./img/beanbag.png') no-repeat center bottom;
+  background: url("./img/beanbag.png") no-repeat center bottom;
   background-size: 90%;
 }
 
@@ -64,11 +65,12 @@ h1.title svg {
 }
 
 .navbar-brand {
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
 }
 
-.navbar a:hover, .navbar a:focus {
-  color:#AB637F;
+.navbar a:hover,
+.navbar a:focus {
+  color: #ab637f;
 }
 
 .navbar-menu {
@@ -93,7 +95,8 @@ h1.title svg {
   color: gray;
 }
 
-.links a:hover, .links a:focus {
+.links a:hover,
+.links a:focus {
   color: #3273dc;
 }
 
@@ -110,7 +113,7 @@ h1.title svg {
 }
 
 .hero {
-  background: url('img/legos.jpg') center repeat!important;
+  background: url("img/legos.jpg") center repeat !important;
   min-height: calc(100vh - 140px);
   position: relative;
 }
@@ -119,10 +122,13 @@ h1.title svg {
   min-height: 100%;
   width: 100%;
   position: absolute;
-  top: 0; 
+  top: 0;
   left: 0;
-  background: linear-gradient(5deg, 
-    rgba(216, 25, 0, 0.85), rgba(255, 180, 0, 0.9));
+  background: linear-gradient(
+    5deg,
+    rgba(216, 25, 0, 0.85),
+    rgba(255, 180, 0, 0.9)
+  );
   z-index: 1;
   background-size: cover;
 }
@@ -130,16 +136,35 @@ h1.title svg {
 .hero-img {
   padding: 4rem 0;
 }
-.hero-img .st0{fill:#FFFFFF;}
-.hero-img .st6{fill:#FFFFFF;}
-.hero-img .st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-.hero-img .st2{opacity:0.25;}
-.hero-img .st3{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-.hero-img .st4{fill:#F48500;}
-.hero-img .st5{fill:#F16400;}
+.hero-img .st0 {
+  fill: #ffffff;
+}
+.hero-img .st6 {
+  fill: #ffffff;
+}
+.hero-img .st1 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+.hero-img .st2 {
+  opacity: 0.25;
+}
+.hero-img .st3 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+}
+.hero-img .st4 {
+  fill: #f48500;
+}
+.hero-img .st5 {
+  fill: #f16400;
+}
 
 .hero-body {
-  background: url('img/hero-bg.png') center no-repeat;
+  background: url("img/hero-bg.png") center no-repeat;
   display: flex;
   align-items: center;
   position: relative;
@@ -155,7 +180,8 @@ h1.title svg {
   color: #363636;
 }
 
-.hero-body p, .hero-body a {
+.hero-body p,
+.hero-body a {
   color: white;
 }
 
@@ -163,8 +189,10 @@ h1.title svg {
   text-decoration: underline;
 }
 
-.hero-body a:hover,.hero-body a:focus,.hero-body a:active {
-  color:rgb(252, 252, 185);
+.hero-body a:hover,
+.hero-body a:focus,
+.hero-body a:active {
+  color: rgb(252, 252, 185);
 }
 
 .hero-body .button-column {
@@ -195,9 +223,9 @@ h1.title svg {
   text-transform: uppercase;
   font-size: 18px;
   text-decoration: none;
-  background: linear-gradient(5deg, #AB637F,#da5386);
+  background: linear-gradient(5deg, #ab637f, #da5386);
   border: 4px solid white;
-  transition: transform .2s;
+  transition: transform 0.2s;
   display: block;
   padding-top: 2rem;
   z-index: 3;
@@ -205,22 +233,21 @@ h1.title svg {
 
 .hero-body .button svg {
   opacity: 0;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
 }
 
-.hero-body .button:hover, 
+.hero-body .button:hover,
 .hero-body .button:focus {
   background: white;
   border-color: white;
-  color:  rgb(255, 102, 0);
+  color: rgb(255, 102, 0);
   transform: translateY(-12px);
-} 
+}
 
-.hero-body .button:hover svg, 
+.hero-body .button:hover svg,
 .hero-body .button:focus svg {
   opacity: 1;
 }
-
 
 .portrait-col {
   width: 400px;
@@ -267,20 +294,20 @@ h1.title svg {
 }
 
 .technologies {
-  display: flex; 
+  display: flex;
   padding: 1rem 0;
   justify-content: left;
   flex-wrap: wrap;
 }
 
-.technologies li { 
+.technologies li {
   font-weight: bold;
-  padding: .25rem 1rem;
-  margin-right: .25rem;
+  padding: 0.25rem 1rem;
+  margin-right: 0.25rem;
   background: whitesmoke;
   border-radius: 4px;
   display: flex;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   justify-content: space-between;
 }
 
@@ -309,20 +336,18 @@ h1.title svg {
   margin-bottom: 2rem;
 }
 
-
 .footer {
   background: WhiteSmoke;
 }
 
 .footer .links {
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
 }
 
 .footer .links a {
-  padding: .75rem;
+  padding: 0.75rem;
 }
-
 
 .portrait-wrapper {
   margin-bottom: 2.75rem;
@@ -341,7 +366,8 @@ h1.title svg {
     width: 300px;
     display: block;
   }
-  .hero h1, .hero .subtitle {
-    text-align: center; 
+  .hero h1,
+  .hero .subtitle {
+    text-align: center;
   }
 }
