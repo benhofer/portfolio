@@ -1,6 +1,6 @@
 # Simple Portfolio App
 
-My goal was to create a one-page visual resume.
+My goal was to create a one-page visual resume. See it live at benjaminhofer.co!
 
 The app is built using the following technologies:
 
