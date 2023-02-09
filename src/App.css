@@ -1,3 +1,8 @@
+
+/**********************
+  # Generic Elements & Classes
+**********************/
+
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -15,32 +20,24 @@ a:focus {
   padding-top: 8rem;
 }
 
-#about-me.section {
-  padding-right: 0;
-  padding-left: 0;
-  padding-top: 2.75rem;
-}
-
-.title {
-  font-style: italic;
-}
-
-h1.page-title {
-  font-size: 3rem;
-}
-
-h1.title svg {
-  position: relative;
-  top: 4px;
-}
-
-.about-text p {
-  max-width: 600px;
-}
-
 .sub-section {
   padding: 3rem 0;
 }
+
+/* Footer Links */ 
+.links a {
+  padding-right: 1.5rem;
+  color: gray;
+}
+
+.links a:hover,
+.links a:focus {
+  color: #3273dc;
+}
+
+/**********************
+  # Header
+**********************/
 
 .project-header {
   padding-bottom: 9rem;
@@ -77,6 +74,11 @@ h1.title svg {
   box-shadow: none;
 }
 
+/**********************
+  # Main Section
+**********************/
+
+
 .main-container {
   min-height: 100vh;
   padding-bottom: 316px;
@@ -90,26 +92,15 @@ h1.title svg {
   }
 }
 
-.links a {
-  padding-right: 1.5rem;
-  color: gray;
-}
 
-.links a:hover,
-.links a:focus {
-  color: #3273dc;
-}
+/**********************
+  # Hero Section
+**********************/
 
-.top-links-wrapper {
-  display: flex;
-  justify-content: flex-end;
-}
-.top-links {
-  flex-direction: column;
-  display: flex;
-}
-.top-links span {
-  margin-bottom: 16px;
+#about-me.section {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 2.75rem;
 }
 
 .hero {
@@ -133,6 +124,7 @@ h1.title svg {
   background-size: cover;
 }
 
+/* hero img devices */
 .hero-img {
   padding: 4rem 0;
 }
@@ -163,12 +155,26 @@ h1.title svg {
   fill: #f16400;
 }
 
+/* swoop */
 .hero-body {
   background: url("img/hero-bg.png") center no-repeat;
   display: flex;
   align-items: center;
   position: relative;
   z-index: 2;
+}
+
+.title {
+  font-style: italic;
+}
+
+h1.page-title {
+  font-size: 3rem;
+}
+
+h1.title svg {
+  position: relative;
+  top: 4px;
 }
 
 .hero-body p {
@@ -271,6 +277,10 @@ h1.title svg {
   }
 }
 
+/**********************
+  # Project Section
+**********************/
+
 .product-img-wrapper {
   max-width: 1000px;
   margin: 0 auto;
@@ -320,6 +330,10 @@ h1.title svg {
   padding-top: 160px;
 }
 
+/**********************
+  # Tesimonials Section
+**********************/
+
 #testimonials .sub-section {
   background: WhiteSmoke;
   position: relative;
@@ -335,6 +349,10 @@ h1.title svg {
 #testimonials p {
   margin-bottom: 2rem;
 }
+
+/**********************
+  # Footer Section
+**********************/
 
 .footer {
   background: WhiteSmoke;
