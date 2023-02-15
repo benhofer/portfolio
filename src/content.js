@@ -7,7 +7,7 @@ import weAdmin from './img/portfolio/we-admin.png';
 import weMatchStats from './img/portfolio/we-match-stats.png';
 import weP2G from './img/portfolio/we-p2g.png';
 import weProspect from './img/portfolio/we-prospect.png';
-// import tempora from './img/portfolio/tempora.png';
+import tempora from './img/portfolio/tempora.png';
 import kc from './img/portfolio/keycaliber.png';
 import quickSearchPoster from './img/portfolio/quick-search.gif';
 import inventory from './img/portfolio/inventory.png';
@@ -228,31 +228,35 @@ export const WORK = [
       },
     ],
   },
-  // {
-  //     title: "Side Projects",
-  //     time: "2020 - Present",
-  //     projects: [{
-  //             title: "Centering Prayer App",
-  //             description: "Worked with a friend to develop a webapp which aids spiritual seekers in centering prayer. I created background color animations to transition between the pages with CSS and React-Router. Each meditation presents a consistent audio format with bells and readings, accomplished via timers and React hooks.",
-  //             link: "https://main.d15b5ad74h55z7.amplifyapp.com/app",
-  //             headerImg: tempora,
-  //             technologies: [
-  //                 "HTML", "CSS", "JavaScript", "React", "React Router", "Responsive Design"
-  //             ]
-  //         },
-  // {
-  //     title: "Would You Rather App ",
-  //     description: "This project was for the Udacity React Nanodegree. The assignment was to build an app which would allow users to create “Would You Rather” questions and also to vote on them. The demo features three made-up users.",
-  //     link: "https://master.d2jo2yzx5ypc0r.amplifyapp.com/",
-  //     images: [
-  //         wyr1, wyr2, wyr3
-  //     ],
-  //     technologies: [
-  //         "HTML", "CSS", "JavaScript", "React"
-  //     ]
-  // }
-  // ]
-  // }
+  {
+    title: 'Side Projects',
+    time: '2020 - Present',
+    projects: [
+      {
+        title: 'Centering Prayer App',
+        description:
+          'Worked with a friend to develop a webapp which aids spiritual seekers in centering prayer. I created background color animations to transition between the pages with CSS and React-Router. Each meditation presents a consistent audio format with bells and readings, accomplished via timers and React hooks.',
+        link: 'https://main.d15b5ad74h55z7.amplifyapp.com/app',
+        headerImg: tempora,
+        technologies: [
+          'HTML',
+          'CSS',
+          'JavaScript',
+          'React',
+          'React Router',
+          'Responsive Design',
+        ],
+      },
+      // {
+      //   title: 'Would You Rather App ',
+      //   description:
+      //     'This project was for the Udacity React Nanodegree. The assignment was to build an app which would allow users to create “Would You Rather” questions and also to vote on them. The demo features three made-up users.',
+      //   link: 'https://master.d2jo2yzx5ypc0r.amplifyapp.com/',
+      //   images: [wyr1, wyr2, wyr3],
+      //   technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+      // },
+    ],
+  },
 ];
 
 export const TESTIMONIALS = [
