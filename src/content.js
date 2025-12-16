@@ -14,8 +14,8 @@ import inventory from './img/portfolio/inventory.png';
 import riskImg from './img/portfolio/risk-sc.gif';
 
 export const ABOUT = {
-  title: 'Frontend Developer',
-  subtitle: 'In Washington DC',
+  title: 'Front End Developer',
+  subtitle: 'In Gainesville, Florida',
   text: (
     <div>
       <p>
@@ -280,7 +280,7 @@ export const TESTIMONIALS = [
         <p>
           Apart from skills, Ben has honesty, humility and friendliness that
           make him a gem in the team. I wish him great creative experiences in
-          his future gigs. P.S. Ben’s a great song writer and musician
+          his future gigs. P.S. Ben’s a great songwriter and musician
         </p>
       </div>
     ),
@@ -317,7 +317,7 @@ export const TESTIMONIALS = [
           I worked with Ben in WealthEngine where he was responsible for
           designing the UX/UI components for my team. Ben is not only a very
           passionate and enthusiastic UX designer but also a hardworking and
-          dedicated UI engineer. He always looks at UI from the users&apos
+          dedicated UI engineer. He always looks at UI from the users&apos;
           perspective and his suggestions for UI layouts are fresh and creative.
           His quick-learning capabilities are great add-ons. On the personal
           front, he is very friendly to work with. I would highly recommend him
