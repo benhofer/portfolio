@@ -14,7 +14,7 @@ function Footer() {
         <img src={ben} className="portrait" alt="Portrait" width="130px" />
       </div>
       <div className="content has-text-centered p-3">
-        <p>&copy; Copyright 2023 Ben Hofer</p>
+        <p>&copy; Copyright 2023-2025 Ben Hofer</p>
       </div>
     </footer>
   );

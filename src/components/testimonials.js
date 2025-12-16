@@ -29,7 +29,7 @@ function Testimonials() {
             <h2 className="is-size-5">{t.text}</h2>
             <p>
               <strong>
-                {t.colleague},{t.title},{t.organization}
+                {t.colleague}, {t.title}, {t.organization}
               </strong>
             </p>
           </div>
