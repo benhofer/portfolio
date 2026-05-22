@@ -90,6 +90,7 @@ export const ABOUT = {
       id: 2,
       link: (
         <a
+          id="emailLink"
           href="mailto:ben dot hofer at gmail dot com"
           rel="noreferrer noopener"
           target="_blank"

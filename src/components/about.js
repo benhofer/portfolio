@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Icon } from '@iconify/react';
 import downArrow from '@iconify/icons-mdi/arrow-down-drop-circle';
 import { ABOUT } from '../content';
 import HeroImg from '../hero-img';
 
 function About() {
+  const SecureEmailLink = () => {
+    const user = 'ben.hofer';
+    const domain = 'gmail.com';
+
+    const handleContext = (e) => {
+      e.preventDefault();
+        window.location.href = `mailto:${user}@${domain}`;
+      // console.log(user);
+    };
+
+    const emailLink = document.getElementById('emailLink');
+    emailLink.onclick = function (event) {
+      handleContext(event);
+    };
+  };
+
+  useEffect(() => {
+    SecureEmailLink();
+  });
+
   return (
     <section className="section" id="about-me">
       <div className="hero">
