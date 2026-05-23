@@ -2,5 +2,5 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm use 20.19
+        - nvm use 20
         - npm install
