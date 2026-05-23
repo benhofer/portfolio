@@ -5,3 +5,10 @@ frontend:
         - nvm install 20
         - nvm use 20
         - npm install
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
