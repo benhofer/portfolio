@@ -1,0 +1,6 @@
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm use 20.19
+        - npm install
