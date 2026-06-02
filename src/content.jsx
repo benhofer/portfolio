@@ -344,7 +344,7 @@ export const TESTIMONIALS = [
       </div>
     ),
     colleague: 'Alex Poulos',
-    organization: 'The Washington Post',
+    organization: 'Spotify',
     title: 'Full Stack Engineer',
   },
 ];
