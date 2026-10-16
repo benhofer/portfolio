@@ -4,6 +4,7 @@ import Header from './components/header';
 import About from './components/about';
 import UXAbout from './components/ux-about';
 import Portfolio from './components/portfolio';
+import UXPortfolio from './components/ux-portfolio';
 import Testimonials from './components/testimonials';
 import Footer from './components/footer';
 
@@ -35,7 +36,13 @@ function App() {
           <UXAbout />
         }
         <div className="container">
-            <Portfolio />
+            {
+              currentPath !== '/uiux' &&
+              <Portfolio />
+            }{
+              currentPath === '/uiux' &&
+              <UXPortfolio />
+            }
             <Testimonials />
           </div>
         

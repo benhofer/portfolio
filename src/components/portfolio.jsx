@@ -15,16 +15,6 @@ function Portfolio() {
           >
             <h2 className="is-size-2 mb-2">{work.title} &nbsp;</h2>
             <div className="subtitle time">{work.time}</div>
-            {work.technologies && (
-              <ul className="technologies">
-                {work.technologies.map((t) => (
-                  <li key={`tech-${t}`}>
-                    <Icon icon={check} width="24px" />
-                    <i>{t}</i>
-                  </li>
-                ))}
-              </ul>
-            )}
 
             <p className="mb-2">{work.description}</p>
             {work.link && (

@@ -308,6 +308,27 @@ export const WORK = [
   },
 ];
 
+export const UXWORK = [
+  {
+    title: 'KeyCaliber',
+    id: 0,
+    description:
+      "I built wireframes, UI and data visualizations for this cybersecurity startup's SaaS product and public marketing website.",
+  },
+  {
+    title: 'WealthEngine',
+    id: 1,
+    time: 'April 2014 - June 2020',
+    description:
+      'I established, maintained and documented a UI pattern library for the WealthEngine data analytics platform. This served to organize the code and streamline frontend development by providing the team with reusable components and layouts.',
+    link: ['https://www.wealthengine.com/about', 'About WealthEngine'],
+  },
+  {
+    title: 'Side Projects',
+  },
+];
+
+
 export const TESTIMONIALS = [
   {
     id: 0,
