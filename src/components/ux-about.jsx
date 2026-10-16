@@ -1,0 +1,62 @@
+import React, { useEffect } from 'react';
+import { Icon } from '@iconify/react';
+import downArrow from '@iconify/icons-mdi/arrow-down-drop-circle';
+import { ABOUT, UXABOUT } from '../content';
+import HeroImg from '../hero-img';
+
+function UXAbout() {
+  const SecureEmailLink = () => {
+    const user = 'ben.hofer';
+    const domain = 'gmail.com';
+
+    const handleContext = (e) => {
+      e.preventDefault();
+        window.location.href = `mailto:${user}@${domain}`;
+      // console.log(user);
+    };
+
+    const emailLink = document.getElementById('emailLink');
+    emailLink.onclick = function (event) {
+      handleContext(event);
+    };
+  };
+
+  useEffect(() => {
+    SecureEmailLink();
+  });
+
+  return (
+    <section className="section" id="about-me">
+      <div className="hero">
+        <div className="hero-bg" />
+        <div className="hero-body p-6">
+          <div className="container px-5 pt-6">
+            <div className="columns">
+              <div className="column">
+                <h1 className="title page-title">{UXABOUT.title}</h1>
+                <div className="subtitle is-size-4 mb-4">{UXABOUT.subtitle}</div>
+                <div className="about-text mb-5">{UXABOUT.text}</div>
+                <section className="links">
+                  {ABOUT.links.map((link) => (
+                    <span key={`link-${link.id}`}>{link.link}</span>
+                  ))}
+                </section>
+              </div>
+              <div className="column">
+                <HeroImg />
+              </div>
+            </div>
+          </div>
+          <div className="button-column">
+            <a href="#portfolio" className="button">
+              <div>View My Portfolio</div>
+              <Icon icon={downArrow} width="32px" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default UXAbout;

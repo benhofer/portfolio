@@ -1,9 +1,12 @@
 import React from 'react';
+import uxHeroImg from './img/ui_ux_wireframe_2000px.png';
 
 export default function HeroImg() {
   return (
     <div className="hero-img">
-      <svg
+      <img src={uxHeroImg} />
+
+      {/* <svg
         version="1.1"
         id="Layer_1"
         xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +186,7 @@ export default function HeroImg() {
             />
           </g>
         </g>
-      </svg>
+      </svg> */}
     </div>
   );
 }
