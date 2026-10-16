@@ -310,21 +310,22 @@ export const WORK = [
 
 export const UXWORK = [
   {
-    title: 'KeyCaliber',
+    title: 'Style Guide / Pattern Libraries',
+    subtitle: 'Establishing Patterns for Consistency and Reusability',
     id: 0,
     description:
-      "I built wireframes, UI and data visualizations for this cybersecurity startup's SaaS product and public marketing website.",
-  },
+      "Early in my career at Sapient, I recognized the need for a structured, reusable frontend component library at a time when solutions like Bootstrap and Material were not yet widely available. Using a basic CSS grid system as a foundation, I designed, built, and documented atomic components that could be combined into larger layouts and templates. Guided by Nielsen’s usability heuristics, I emphasized consistency, standards, and minimalist design. The library improved code organization, reduced duplication, and gave developers a consistent, scalable foundation for building and maintaining new features. I later applied a similar approach at WealthEngine, using Bootstrap as the foundation.",
+    },
   {
-    title: 'WealthEngine',
+    title: 'Usability Testing',
     id: 1,
-    time: 'April 2014 - June 2020',
     description:
-      'I established, maintained and documented a UI pattern library for the WealthEngine data analytics platform. This served to organize the code and streamline frontend development by providing the team with reusable components and layouts.',
-    link: ['https://www.wealthengine.com/about', 'About WealthEngine'],
+      'At Sapient, I led UX on a project that used rapid prototyping and usability testing based on Steve Krug’s Rocket Surgery Made Easy. We created a prototype, set up separate control and observation rooms, and tested it with three users completing predefined tasks. By observing their interactions, documenting usability issues, and iterating on the design, we improved the overall user experience. The project went on to win that year’s HHS Innovates Award.',
   },
   {
-    title: 'Side Projects',
+    title: 'Rapid Prototyping',
+    id: 2,
+    description: 'At WealthEngine, I took the initiative to design and build a React prototype for a new custom views feature. I envisioned a flexible, drag-and-drop interface that allowed users to assemble wealth profile modules into personalized views and apply those views across multiple profiles. The prototype demonstrated the concept’s potential, earned positive feedback, and was added to the product roadmap.'
   },
 ];
 

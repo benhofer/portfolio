@@ -7,24 +7,23 @@ import { UXWORK } from '../content';
 function UXPortfolio() {
   return (
     <section className="section" id="portfolio">
-      <h1 className="title has-text-centered">Portfolio</h1>
+      <h1 className="title has-text-centered">Case Studies</h1>
       {UXWORK.map((work, i) => (
         <div key={`work-${work.id}`}>
              <div
                 className={`${i % 2 ? 'reverse' : ''} sub-section`}
                 key={`work-${work.id}-project-${work.id}`}
               >
-                <div className="project-header">
-                  <h3 className="is-size-2">{work.title}</h3>
-                  <div className="subtitle">{work.subtitle}</div>
-                  <ul className="technologies pb-5">
-                    {work?.skills?.map((t) => (
-                      <li key={`tech-${t}`}>
-                        <Icon icon={check} width="24px" />
-                        <i>{t}</i>
-                      </li>
-                    ))}
-                  </ul>
+                <h3 className="is-size-2">{work.title}</h3>
+                <div className="subtitle">{work.subtitle}</div>
+                <ul className="technologies pb-5">
+                  {work?.skills?.map((t) => (
+                    <li key={`tech-${t}`}>
+                      <Icon icon={check} width="24px" />
+                      <i>{t}</i>
+                    </li>
+                  ))}
+                </ul>
                   <div className="columns main-columns">
                     <div className="mb-4 px-4 column is-one-third">
                       <p className="mb-2">{work.description}</p>
@@ -80,7 +79,6 @@ function UXPortfolio() {
                       )}
                     </div>
                   </div>
-                </div>
                 {work.images &&
                   work.images.map((img) => (
                     <div
