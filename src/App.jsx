@@ -29,19 +29,19 @@ function App() {
     <div>
       <div className="main-container">
         <Header />
-        {currentPath !== '/uiux' &&
-          <About />
-        }{
-          currentPath === '/uiux' &&
+        {currentPath !== '/frontend' &&
           <UXAbout />
+        }{
+          currentPath === '/frontend' &&
+          <About />
         }
         <div className="container">
             {
-              currentPath !== '/uiux' &&
-              <Portfolio />
-            }{
-              currentPath === '/uiux' &&
+              currentPath !== '/frontend' &&
               <UXPortfolio />
+            }{
+              currentPath === '/frontend' &&
+              <Portfolio />
             }
             <Testimonials />
           </div>
